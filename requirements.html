@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hardware, operating system and external tool requirements for LightTreeFM on classic and accelerated Amigas.">
+    <title>Requirements — LightTreeFM</title>
+    <style>
+        :root { color-scheme: dark; }
+        * { box-sizing: border-box; }
+        body { margin: 0; background: #080b12; color: #d1d5db; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.8; }
+        a { color: #fbbf24; text-decoration: none; }
+        a:hover { color: #fde68a; }
+        a:focus-visible { outline: 2px solid #38bdf8; outline-offset: 5px; }
+        .topbar { border-bottom: 1px solid #ffffff14; background: #080b12f0; }
+        .nav { max-width: 1152px; margin: auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+        .nav img { display: block; width: 140px; height: auto; }
+        .nav-links { display: flex; flex-wrap: wrap; gap: 20px; font-size: 14px; font-weight: 600; }
+        main { max-width: 1080px; margin: auto; padding: 64px 24px 80px; }
+        .intro { display: grid; grid-template-columns: 1fr 240px; align-items: center; gap: 48px; margin-bottom: 40px; }
+        .eyebrow { color: #fbbf24; font: 12px Consolas, monospace; letter-spacing: .18em; text-transform: uppercase; }
+        h1 { margin: 14px 0 20px; color: #f8fafc; font-size: clamp(32px, 5vw, 52px); line-height: 1.13; letter-spacing: -.035em; }
+        .byline { color: #94a3b8; margin: 0; }
+        .portrait { margin: 0; padding: 8px; background: linear-gradient(145deg, #192238, #0d1220); border: 1px solid #f59e0b66; border-radius: 24px; box-shadow: 0 16px 48px #0005; }
+        .portrait img { display: block; width: 100%; height: auto; border-radius: 17px; }
+        article { padding: 40px 56px; border: 1px solid #1f2937; border-radius: 24px; background: radial-gradient(ellipse at top right, #f59e0b08, transparent 50%), #0c101c; box-shadow: 0 24px 64px #0003; }
+        article ul { padding-left: 22px; margin: 0 0 24px; } article li { padding-left: 4px; margin-bottom: 10px; } article li::marker { color: #fbbf24; } article strong { color: #f8fafc; }
+        article p { margin: 0 0 22px; font-size: 17px; }
+        article p:last-child { margin-bottom: 0; }
+        h2 { color: #fbbf24; font-size: 21px; line-height: 1.4; letter-spacing: -.01em; margin: 38px 0 18px; }
+        blockquote { margin: 28px 0 32px; border-left: 3px solid #f59e0b; padding: 18px 24px; background: #f59e0b08; border-radius: 0 12px 12px 0; }
+        blockquote p { color: #f8fafc; font-size: 23px; line-height: 1.5; }
+        .closing { border-top: 1px solid #ffffff14; margin-top: 30px; padding-top: 26px; }
+        .back { display: inline-block; margin-top: 32px; font-size: 14px; }
+        footer { border-top: 1px solid #1f2937; padding: 28px 24px; text-align: center; color: #94a3b8; font-size: 13px; }
+        @media (max-width: 640px) { main { padding: 36px 20px 48px; } .intro { grid-template-columns: 1fr; gap: 24px; } .portrait { width: 200px; } article { padding: 26px 22px; } article p { font-size: 16px; } blockquote { padding: 16px 18px; } blockquote p { font-size: 21px; } .nav { padding: 14px 20px; } .nav img { width: 110px; } .nav-links { gap: 12px; font-size: 13px; } }
+    </style>
+</head>
+<body>
+    <header class="topbar">
+        <nav class="nav" aria-label="Main navigation">
+            <a href="index.html" aria-label="LightTreeFM home"><img src="IMAGES/logo.png" alt="LightTreeFM"></a>
+            <div class="nav-links"><a href="index.html">Home</a><a href="requirements.html" aria-current="page">Requirements</a><a href="about.html">About</a><a href="https://dsavioni.itch.io/lighttreefm" target="_blank" rel="noopener noreferrer">Download ↗</a></div>
+        </nav>
+    </header>
+    <main>
+        <div class="intro" style="display: block">
+            <span class="eyebrow">LightTreeFM · System requirements</span>
+            <h1>Requirements</h1>
+            <p class="byline">LightTreeFM is designed for classic Amiga computers, accelerated systems and compatible emulators. It supports native Amiga graphics, RTG displays and PiStorm configurations.</p>
+        </div>
+        <article aria-label="LightTreeFM requirements">
+            <h2 style="margin-top: 0">Minimum configuration</h2>
+            <ul>
+                <li><strong>Operating system:</strong> AmigaOS 2.05 or later.</li>
+                <li><strong>Processor:</strong> Motorola 68000.</li>
+                <li><strong>Memory:</strong> LightTreeFM can run with just 2 MB of Chip RAM and no Fast RAM.</li>
+                <li><strong>Graphics:</strong> Native Amiga graphics.</li>
+            </ul>
+            <p>On a Chip RAM-only system, available memory limits the operations you can perform and the external tools you can run alongside LightTreeFM. Even a modest amount of Fast RAM makes everyday use more comfortable and practical.</p>
+            <h2>Recommended configuration</h2>
+            <ul>
+                <li><strong>Operating system:</strong> AmigaOS 2.05 or later.</li>
+                <li><strong>Processor:</strong> Motorola 68020 or faster, including PiStorm configurations.</li>
+                <li><strong>Memory:</strong> Some Fast RAM is strongly recommended. The amount of free Chip RAM needed depends on the screen configuration and other running applications.</li>
+                <li><strong>Graphics:</strong> Native Amiga graphics or an RTG display.</li>
+            </ul>
+            <p>Additional Fast RAM provides more room for larger directories, archive operations and multitasking. LightTreeFM also supports 68030, 68040 and 68060 accelerators.</p>
+            <h2>External tools</h2>
+            <p>Archive operations require the appropriate external utilities, such as LHA, LZX, ZIP/UNZIP, ARC and DMS. These utilities have their own processor and memory requirements.</p>
+            <h2>One executable for classic and accelerated Amigas</h2>
+            <p>LightTreeFM uses a single 68000-compatible executable. It adapts its behaviour to the available operating system, libraries, screen and hardware, without requiring separate builds for different processor configurations.</p>
+        </article>
+        <a class="back" href="index.html">← Back to LightTreeFM</a>
+    </main>
+    <footer>LightTreeFM · A modern file manager for classic AmigaOS</footer>
+</body>
+</html>
