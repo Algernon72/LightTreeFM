@@ -1,0 +1,67 @@
+/* Decorative pixel leaves sit above the body background, below the content. */
+body { isolation: isolate; }
+/* A separate fixed layer keeps the landscape stable on mobile as well. */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    pointer-events: none;
+    background:
+        linear-gradient(rgba(8, 11, 18, 0.65), rgba(8, 11, 18, 0.65)),
+        url("IMAGES/autumn-forest.webp") center / cover no-repeat;
+    background-color: #080b12;
+}
+/* Keep text readable while the forest remains visible around the panels. */
+body > main {
+    background-color: rgba(8, 11, 18, 0.82);
+}
+body > section > div.relative.z-10 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-radius: 24px;
+    background-color: rgba(8, 11, 18, 0.76);
+}
+.autumn-leaves {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+    user-select: none;
+}
+.autumn-leaf {
+    position: absolute;
+    top: -32px;
+    left: var(--left);
+    opacity: var(--opacity);
+    animation: autumn-fall var(--duration) var(--delay) linear infinite;
+}
+.autumn-leaf::before {
+    content: "";
+    display: block;
+    width: var(--size);
+    height: var(--size);
+    background: var(--sprite) center / contain no-repeat;
+    image-rendering: pixelated;
+    animation: autumn-sway var(--sway) var(--delay) ease-in-out infinite alternate;
+}
+@keyframes autumn-fall {
+    from { transform: translate3d(0, 0, 0); }
+    to { transform: translate3d(var(--drift), calc(100vh + 64px), 0); }
+}
+@keyframes autumn-sway {
+    from { transform: translateX(-12px) rotate(-24deg); }
+    to { transform: translateX(12px) rotate(30deg); }
+}
+.autumn-leaves.is-paused .autumn-leaf,
+.autumn-leaves.is-paused .autumn-leaf::before { animation-play-state: paused; }
+@media (max-width: 640px) {
+    .autumn-leaf:nth-child(n + 11) { display: none; }
+}
+@media (prefers-reduced-motion: reduce), print {
+    .autumn-leaves { display: none; }
+}
+@media print {
+    body::before { display: none; }
+}
