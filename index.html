@@ -1263,9 +1263,38 @@
 
                     <h4 class="text-base md:text-lg font-semibold text-amber-400/95 mt-7 mb-2.5 flex items-center gap-2">
                         <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
-                        Bounded classic-system model
+                        Comparison capacity that adapts to your Amiga
                     </h4>
-<p class="text-gray-300/90 text-sm md:text-[15px] leading-relaxed my-3 font-normal">The current comparison is bounded to 512 result entries and recursive depth 16. Inaccessible drawers, excessively long paths, memory exhaustion or bound violations actually stop the scan rather than applying a partial comparison.</p>
+<p class="text-gray-300/90 text-sm md:text-[15px] leading-relaxed my-3 font-normal">From classic Amigas to expanded systems, TreeDuo adapts comparison capacity to the memory available at the start of a session, supporting <strong class="text-white font-semibold">up to 32,767 files and folders per comparison</strong>. Automatic limits range from 512 to 32,767 entries, with intermediate steps of 1,024, 2,048, 4,096, 8,192 and 16,384.</p>
+<div class="overflow-x-auto my-6 rounded-xl border border-gray-700/60 shadow-xl bg-[#0f1422]">
+<table class="w-full text-left text-sm border-collapse">
+<caption class="px-4 py-3 text-left text-gray-300">Comparison capacity at a glance</caption>
+<thead class="bg-[#192238] text-amber-400 uppercase text-xs font-mono tracking-wider border-b border-gray-700"><tr>
+<th scope="col" class="px-4 py-3.5 font-bold">Memory configuration</th>
+<th scope="col" class="px-4 py-3.5 font-bold">Files &amp; folders</th>
+</tr></thead>
+<tbody class="divide-y divide-gray-800/80 text-gray-300">
+<tr class="bg-transparent hover:bg-sky-950/40 transition-colors">
+<td class="px-4 py-3">2 MiB Chip RAM, or 1 MiB Chip RAM + 1 MiB trapdoor expansion (no Fast RAM)</td>
+<td class="px-4 py-3">Up to 1,024</td>
+</tr>
+<tr class="bg-[#121829]/60 hover:bg-sky-950/40 transition-colors">
+<td class="px-4 py-3">2 MiB free RAM (standard profile)</td>
+<td class="px-4 py-3">4,096</td>
+</tr>
+<tr class="bg-transparent hover:bg-sky-950/40 transition-colors">
+<td class="px-4 py-3">4 MiB free RAM (standard profile)</td>
+<td class="px-4 py-3">8,192</td>
+</tr>
+<tr class="bg-[#121829]/60 hover:bg-sky-950/40 transition-colors">
+<td class="px-4 py-3">Maximum capacity, memory permitting</td>
+<td class="px-4 py-3">32,767</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="text-gray-300/90 text-sm md:text-[15px] leading-relaxed my-3 font-normal">The count covers <strong class="text-white font-semibold">the entire folder tree</strong>, including entries hidden by filters or collapsed folders. A relative path shared by A and B counts once; an entry found on only one side counts separately. For example, 20,000 corresponding files on each side count as 20,000 file entries, plus folders, while 20,000 different files on each side exceed the overall limit.</p>
+<p class="text-gray-300/90 text-sm md:text-[15px] leading-relaxed my-3 font-normal">TreeDuo supports up to 16 subfolder levels and uses 256-byte path buffers. The session limit stays fixed during refresh, and available memory may run out before that limit is reached. If a limit is exceeded, memory runs out or a folder cannot be read, TreeDuo stops the scan with a clear error instead of presenting an incomplete comparison as complete. If a refresh fails, the previous comparison remains available.</p>
                     <div class="mt-6 flex justify-end">
                         <button type="button" onclick="collapseDocs('treeduo')" aria-controls="docs-content-treeduo" class="text-xs font-mono px-3 py-1.5 rounded-lg bg-gray-800 text-gray-300 hover:bg-amber-500/20 hover:text-amber-400 border border-gray-700 transition-colors">Collapse &#9650;</button>
                     </div>
