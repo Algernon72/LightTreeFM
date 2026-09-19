@@ -16,6 +16,9 @@ body::before {
 body > main {
     background-color: rgba(8, 11, 18, 0.82);
 }
+body > main.showcase-main {
+    background-color: transparent;
+}
 body > section > div.relative.z-10 {
     padding-top: 32px;
     padding-bottom: 32px;

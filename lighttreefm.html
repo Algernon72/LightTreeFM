@@ -142,21 +142,6 @@
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-gradient-to-tr from-amber-500/10 via-orange-500/10 to-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <!-- Platform Pills & Title (Pill e Badges rimossi come richiesto) -->
-            <div class="text-center max-w-4xl mx-auto mb-10">
-                <!-- Sostituita la scritta con il logo ufficiale -->
-                <div class="flex justify-center mb-6">
-                    <img src="IMAGES/logo.png" 
-                         alt="LightTree FM Logo" 
-                         onerror="handleImgError(this)" 
-                         class="h-24 sm:h-32 md:h-40 lg:h-44 w-auto object-contain drop-shadow-[0_12px_40px_rgba(56,189,248,0.3)] hover:scale-105 transition-transform duration-300" />
-                </div>
-                
-                <p class="text-lg sm:text-xl text-gray-300 font-normal leading-relaxed max-w-3xl mx-auto">
-                    A modern interface <strong>designed around interaction, not code</strong> — shaped by the way people naturally work with files, then translated into software. LightTreeFM combines familiar ideas with modern interaction, aiming for the same intuitive and fluid experience from a classic <strong>640×256 High Res PAL</strong> screen all the way up to <strong>1920×1080 RTG</strong>.
-                </p>
-            </div>
-
             <!-- Primary Showcase: LightTree FM.png (Senza testo sovrapposto) -->
             <div class="relative max-w-5xl mx-auto">
                 <div class="relative rounded-3xl overflow-hidden bg-gradient-to-b from-[#192238] to-[#0d1220] p-2 md:p-3 border border-amber-500/40 shadow-2xl shadow-amber-500/10 group cursor-zoom-in"
@@ -171,8 +156,15 @@
                     </div>
                 </div>
 
+                <div class="text-justify max-w-4xl mx-auto mt-8">
+                <p class="text-lg sm:text-xl text-gray-300 font-normal leading-relaxed max-w-3xl mx-auto">
+                    A modern file manager for Amiga, built around today’s interaction patterns: intuitive drag &amp; drop, clear visual metaphors, scalable layouts, tree-based browsing, and archives and ADFs treated like navigable folders with single-file extraction. No MUI required, and designed to scale from classic PAL machines to RTG and PiStorm systems without losing that familiar Amiga feel.
+                </p>
+                </div>
+
                 <!-- Download link to itch.io -->
-                <div class="mt-8 flex flex-col items-center justify-center">
+                <div class="mt-8 mx-auto w-full max-w-[574px] flex flex-col items-center justify-center gap-3">
+                    <img src="IMAGES/new-autumn-release.png?v=2" alt="New autumn release out now" width="2172" height="724" class="block w-full h-auto" />
                     <a href="https://dsavioni.itch.io/lighttreefm"
                        target="_blank"
                        rel="noopener noreferrer"
@@ -187,13 +179,10 @@
     </section>
 
     <!-- MAIN BODY: 12 SECTIONS -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24">
+    <main class="showcase-main max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24">
         
     <section id="overview" class="scroll-mt-24 mb-16 md:mb-24">
-        <div class="rounded-3xl bg-[#0c101c]/90 border border-gray-800/80 p-6 md:p-10 shadow-2xl relative overflow-hidden backdrop-blur-sm">
-            <!-- Ambient subtle glow -->
-            <div class="absolute -top-24 -right-24 w-80 h-80 bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-sky-500/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="p-2 sm:p-4 md:p-10 relative">
 
             <!-- Section Header -->
             <div class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-800/80 pb-6 mb-8 relative z-10">
@@ -202,11 +191,6 @@
                         01
                     </span>
                     <div>
-                        <div class="flex items-center gap-2">
-                            <span class="text-[11px] font-mono uppercase tracking-widest text-amber-400 font-semibold">Core Architecture</span>
-                            <span class="text-gray-600">•</span>
-                            <span class="text-[11px] font-mono text-gray-500">AmigaOS Native</span>
-                        </div>
                         <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">Main Interface & Dual-Pane System</h2>
                     </div>
                 </div>
@@ -220,14 +204,10 @@
             <div class="relative z-10 mb-8">
                 
         <div class="mt-8">
-            <h4 class="text-sm font-mono uppercase tracking-wider text-gray-400 mb-4 flex items-center gap-2">
-                <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                Screenshots & Interface (3)
-            </h4>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('1 Main/font selection.jpg', 'Font Selection &amp; Preview on RTG Screen')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('1 Main/font selection.jpg', 'Font Selection &amp; Preview on RTG Screen')">
             <img src="IMAGES/1 Main/font selection.jpg"
                  alt="Font Selection &amp; Preview on RTG Screen"
                  loading="lazy"
@@ -241,14 +221,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">RTG Screen</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Font Selection &amp; Preview on RTG Screen">Font Selection &amp; Preview on RTG Screen</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">RTG Screen</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('1 Main/RTG MAIN.jpg', 'Dual-Pane Layout with Left Navigation &amp; Active Drawer')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('1 Main/RTG MAIN.jpg', 'Dual-Pane Layout with Left Navigation &amp; Active Drawer')">
             <img src="IMAGES/1 Main/RTG MAIN.jpg" 
                  alt="Dual-Pane Layout with Left Navigation &amp; Active Drawer" 
                  loading="lazy"
@@ -262,14 +242,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Dual Tree</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Dual-Pane Layout with Left Navigation &amp; Active Drawer">Dual-Pane Layout with Left Navigation &amp; Active Drawer</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Dual Tree</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('1 Main/Main 640x256.jpg', 'Native OCS/ECS 640x256 PAL Screen with Custom 8-Color Palette')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('1 Main/Main 640x256.jpg', 'Native OCS/ECS 640x256 PAL Screen with Custom 8-Color Palette')">
             <img src="IMAGES/1 Main/Main 640x256.jpg" 
                  alt="Native OCS/ECS 640x256 PAL Screen with Custom 8-Color Palette" 
                  loading="lazy"
@@ -283,7 +263,7 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Native 640x256</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Native OCS/ECS 640x256 PAL Screen with Custom 8-Color Palette">Native OCS/ECS 640x256 PAL Screen with Custom 8-Color Palette</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Native 640x256</span>
         </div>
@@ -300,14 +280,13 @@
                         onclick="toggleDocs('overview')" 
                         id="docs-btn-overview"
                         aria-expanded="false"
-                        class="docs-toggle-btn w-full flex items-center justify-between p-4 md:p-5 rounded-2xl bg-[#111728] hover:bg-[#161f36] border border-amber-500/30 hover:border-amber-400/80 transition-all duration-300 group cursor-pointer shadow-lg text-left">
+                        class="docs-toggle-btn w-full flex items-center justify-between p-4 md:p-5 rounded-2xl bg-[#111728]/70 hover:bg-[#161f36]/80 border border-amber-500/30 hover:border-amber-400/80 transition-all duration-300 group cursor-pointer shadow-lg text-left">
                     <div class="flex items-center gap-3.5">
                         <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 group-hover:scale-105 group-hover:bg-amber-500 group-hover:text-black transition-all flex-shrink-0">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                         </div>
                         <div>
-                            <span class="text-xs font-mono uppercase tracking-wider text-amber-400 font-bold block">Documentation and Technical Specifications</span>
-                            <span class="text-sm md:text-base font-semibold text-white group-hover:text-amber-300 transition-colors toggle-label">Click to expand the detailed description</span>
+                            <span class="text-sm md:text-base font-semibold text-white group-hover:text-amber-300 transition-colors toggle-label">Main Interface &amp; Dual-Pane System description</span>
                         </div>
                     </div>
                     <div class="flex items-center gap-2.5 flex-shrink-0">
@@ -315,7 +294,7 @@
                     </div>
                 </button>
 
-                <div id="docs-content-overview" class="docs-content hidden pt-6 pb-2 docx-content transition-all duration-300">
+                <div id="docs-content-overview" class="docs-content hidden mt-4 p-5 md:p-8 rounded-2xl bg-[#0c101c]/75 border border-gray-800/60 docx-content transition-all duration-300">
                     
                     <div class="mt-10 mb-4 pb-2 border-b border-gray-800/80 flex items-center gap-3">
                         <span class="w-2 h-6 bg-gradient-to-b from-amber-400 to-orange-500 rounded-sm"></span>
@@ -351,6 +330,9 @@
                     </li>
 </ul>
 <p class="text-gray-300/90 text-sm md:text-[15px] leading-relaxed my-3 font-normal">LightTreeFM uses one unified 68000-safe executable rather than separate “classic” and “modern” editions. Runtime capability checks select the most appropriate implementation for the active OS, libraries, screen and hardware.</p>
+                    <div class="mt-6 flex justify-end">
+                        <button type="button" onclick="collapseDocs('overview')" aria-controls="docs-content-overview" class="text-xs font-mono px-3 py-1.5 rounded-lg bg-gray-800 text-gray-300 hover:bg-amber-500/20 hover:text-amber-400 border border-gray-700 transition-colors">Collapse &#9650;</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -358,10 +340,7 @@
     
 
     <section id="rename" class="scroll-mt-24 mb-16 md:mb-24">
-        <div class="rounded-3xl bg-[#0c101c]/90 border border-gray-800/80 p-6 md:p-10 shadow-2xl relative overflow-hidden backdrop-blur-sm">
-            <!-- Ambient subtle glow -->
-            <div class="absolute -top-24 -right-24 w-80 h-80 bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-sky-500/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="p-2 sm:p-4 md:p-10 relative">
 
             <!-- Section Header -->
             <div class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-800/80 pb-6 mb-8 relative z-10">
@@ -370,11 +349,6 @@
                         02
                     </span>
                     <div>
-                        <div class="flex items-center gap-2">
-                            <span class="text-[11px] font-mono uppercase tracking-widest text-amber-400 font-semibold">Productivity Tool</span>
-                            <span class="text-gray-600">•</span>
-                            <span class="text-[11px] font-mono text-gray-500">AmigaOS Native</span>
-                        </div>
                         <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">Visual Multi Rename Engine</h2>
                     </div>
                 </div>
@@ -388,14 +362,10 @@
             <div class="relative z-10 mb-8">
                 
         <div class="mt-8">
-            <h4 class="text-sm font-mono uppercase tracking-wider text-gray-400 mb-4 flex items-center gap-2">
-                <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                Screenshots & Interface (4)
-            </h4>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('2 Visual Batch Rename/Visual Batch Rename Name.jpg', 'Base Name Transformations &amp; Pattern Search/Replace')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('2 Visual Batch Rename/Visual Batch Rename Name.jpg', 'Base Name Transformations &amp; Pattern Search/Replace')">
             <img src="IMAGES/2 Visual Batch Rename/Visual Batch Rename Name.jpg" 
                  alt="Base Name Transformations &amp; Pattern Search/Replace" 
                  loading="lazy"
@@ -409,14 +379,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Base Name</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Base Name Transformations &amp; Pattern Search/Replace">Base Name Transformations &amp; Pattern Search/Replace</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Base Name</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('2 Visual Batch Rename/Visual Batch Rename extension.jpg', 'Extension Management, Normalisation &amp; Case Rules')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('2 Visual Batch Rename/Visual Batch Rename extension.jpg', 'Extension Management, Normalisation &amp; Case Rules')">
             <img src="IMAGES/2 Visual Batch Rename/Visual Batch Rename extension.jpg" 
                  alt="Extension Management, Normalisation &amp; Case Rules" 
                  loading="lazy"
@@ -430,14 +400,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Extension</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Extension Management, Normalisation &amp; Case Rules">Extension Management, Normalisation &amp; Case Rules</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Extension</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('2 Visual Batch Rename/Visual Batch Rename prefix.jpg', 'Prefix Rules, Enclosing Characters &amp; Numeric Padding')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('2 Visual Batch Rename/Visual Batch Rename prefix.jpg', 'Prefix Rules, Enclosing Characters &amp; Numeric Padding')">
             <img src="IMAGES/2 Visual Batch Rename/Visual Batch Rename prefix.jpg" 
                  alt="Prefix Rules, Enclosing Characters &amp; Numeric Padding" 
                  loading="lazy"
@@ -451,14 +421,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Prefix</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Prefix Rules, Enclosing Characters &amp; Numeric Padding">Prefix Rules, Enclosing Characters &amp; Numeric Padding</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Prefix</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('2 Visual Batch Rename/Visual Batch Rename suffix.jpg', 'Suffix Rules, Counter Stepping &amp; Collision Detection')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('2 Visual Batch Rename/Visual Batch Rename suffix.jpg', 'Suffix Rules, Counter Stepping &amp; Collision Detection')">
             <img src="IMAGES/2 Visual Batch Rename/Visual Batch Rename suffix.jpg" 
                  alt="Suffix Rules, Counter Stepping &amp; Collision Detection" 
                  loading="lazy"
@@ -472,7 +442,7 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Suffix</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Suffix Rules, Counter Stepping &amp; Collision Detection">Suffix Rules, Counter Stepping &amp; Collision Detection</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Suffix</span>
         </div>
@@ -489,14 +459,13 @@
                         onclick="toggleDocs('rename')" 
                         id="docs-btn-rename"
                         aria-expanded="false"
-                        class="docs-toggle-btn w-full flex items-center justify-between p-4 md:p-5 rounded-2xl bg-[#111728] hover:bg-[#161f36] border border-amber-500/30 hover:border-amber-400/80 transition-all duration-300 group cursor-pointer shadow-lg text-left">
+                        class="docs-toggle-btn w-full flex items-center justify-between p-4 md:p-5 rounded-2xl bg-[#111728]/70 hover:bg-[#161f36]/80 border border-amber-500/30 hover:border-amber-400/80 transition-all duration-300 group cursor-pointer shadow-lg text-left">
                     <div class="flex items-center gap-3.5">
                         <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 group-hover:scale-105 group-hover:bg-amber-500 group-hover:text-black transition-all flex-shrink-0">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                         </div>
                         <div>
-                            <span class="text-xs font-mono uppercase tracking-wider text-amber-400 font-bold block">Documentation and Technical Specifications</span>
-                            <span class="text-sm md:text-base font-semibold text-white group-hover:text-amber-300 transition-colors toggle-label">Click to expand the detailed description</span>
+                            <span class="text-sm md:text-base font-semibold text-white group-hover:text-amber-300 transition-colors toggle-label">Visual Multi Rename description</span>
                         </div>
                     </div>
                     <div class="flex items-center gap-2.5 flex-shrink-0">
@@ -504,7 +473,7 @@
                     </div>
                 </button>
 
-                <div id="docs-content-rename" class="docs-content hidden pt-6 pb-2 docx-content transition-all duration-300">
+                <div id="docs-content-rename" class="docs-content hidden mt-4 p-5 md:p-8 rounded-2xl bg-[#0c101c]/75 border border-gray-800/60 docx-content transition-all duration-300">
                     
                     <div class="mt-10 mb-4 pb-2 border-b border-gray-800/80 flex items-center gap-3">
                         <span class="w-2 h-6 bg-gradient-to-b from-amber-400 to-orange-500 rounded-sm"></span>
@@ -994,6 +963,9 @@
                     </h4>
 <p class="text-gray-300/90 text-sm md:text-[15px] leading-relaxed my-3 font-normal">The old product-specific 63-item cap has been removed. The current protocol and module use streamed manifests, ULONG counts and dynamic compact state, with a technical upper boundary inherited from the general WORD-indexed file list and protocol representation rather than an advertised “unlimited” promise.</p>
 <p class="text-gray-300/90 text-sm md:text-[15px] leading-relaxed my-3 font-normal">Documented synthetic and fixture coverage includes 64, 255 and 1000 rows. The release claim for large real selections remains conditional on the final target RAM, stack, time, cleanup, rollback and recovery qualification described above.</p>
+                    <div class="mt-6 flex justify-end">
+                        <button type="button" onclick="collapseDocs('rename')" aria-controls="docs-content-rename" class="text-xs font-mono px-3 py-1.5 rounded-lg bg-gray-800 text-gray-300 hover:bg-amber-500/20 hover:text-amber-400 border border-gray-700 transition-colors">Collapse &#9650;</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1001,10 +973,7 @@
     
 
     <section id="treeduo" class="scroll-mt-24 mb-16 md:mb-24">
-        <div class="rounded-3xl bg-[#0c101c]/90 border border-gray-800/80 p-6 md:p-10 shadow-2xl relative overflow-hidden backdrop-blur-sm">
-            <!-- Ambient subtle glow -->
-            <div class="absolute -top-24 -right-24 w-80 h-80 bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-sky-500/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="p-2 sm:p-4 md:p-10 relative">
 
             <!-- Section Header -->
             <div class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-800/80 pb-6 mb-8 relative z-10">
@@ -1013,11 +982,6 @@
                         03
                     </span>
                     <div>
-                        <div class="flex items-center gap-2">
-                            <span class="text-[11px] font-mono uppercase tracking-widest text-amber-400 font-semibold">Comparison & Sync</span>
-                            <span class="text-gray-600">•</span>
-                            <span class="text-[11px] font-mono text-gray-500">AmigaOS Native</span>
-                        </div>
                         <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">TreeDuo Folder Comparison & Synchronisation</h2>
                     </div>
                 </div>
@@ -1031,14 +995,10 @@
             <div class="relative z-10 mb-8">
                 
         <div class="mt-8">
-            <h4 class="text-sm font-mono uppercase tracking-wider text-gray-400 mb-4 flex items-center gap-2">
-                <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                Screenshots & Interface (3)
-            </h4>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('3 TreeDuo/TreeDuo Main.jpg', 'TreeDuo Two-Tree Unified Comparison Hierarchy')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('3 TreeDuo/TreeDuo Main.jpg', 'TreeDuo Two-Tree Unified Comparison Hierarchy')">
             <img src="IMAGES/3 TreeDuo/TreeDuo Main.jpg" 
                  alt="TreeDuo Two-Tree Unified Comparison Hierarchy" 
                  loading="lazy"
@@ -1052,14 +1012,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Tree Comparison</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="TreeDuo Two-Tree Unified Comparison Hierarchy">TreeDuo Two-Tree Unified Comparison Hierarchy</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Tree Comparison</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('3 TreeDuo/TreeDuo Actions.jpg', 'Selective Synchronisation Actions &amp; Conflict Markers')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('3 TreeDuo/TreeDuo Actions.jpg', 'Selective Synchronisation Actions &amp; Conflict Markers')">
             <img src="IMAGES/3 TreeDuo/TreeDuo Actions.jpg" 
                  alt="Selective Synchronisation Actions &amp; Conflict Markers" 
                  loading="lazy"
@@ -1073,14 +1033,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Action Plan</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Selective Synchronisation Actions &amp; Conflict Markers">Selective Synchronisation Actions &amp; Conflict Markers</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Action Plan</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('3 TreeDuo/TreeDuo Preview.jpg', 'Execution Preview &amp; Transaction Safety Boundary')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('3 TreeDuo/TreeDuo Preview.jpg', 'Execution Preview &amp; Transaction Safety Boundary')">
             <img src="IMAGES/3 TreeDuo/TreeDuo Preview.jpg" 
                  alt="Execution Preview &amp; Transaction Safety Boundary" 
                  loading="lazy"
@@ -1094,7 +1054,7 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Apply Preview</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Execution Preview &amp; Transaction Safety Boundary">Execution Preview &amp; Transaction Safety Boundary</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Apply Preview</span>
         </div>
@@ -1111,14 +1071,13 @@
                         onclick="toggleDocs('treeduo')" 
                         id="docs-btn-treeduo"
                         aria-expanded="false"
-                        class="docs-toggle-btn w-full flex items-center justify-between p-4 md:p-5 rounded-2xl bg-[#111728] hover:bg-[#161f36] border border-amber-500/30 hover:border-amber-400/80 transition-all duration-300 group cursor-pointer shadow-lg text-left">
+                        class="docs-toggle-btn w-full flex items-center justify-between p-4 md:p-5 rounded-2xl bg-[#111728]/70 hover:bg-[#161f36]/80 border border-amber-500/30 hover:border-amber-400/80 transition-all duration-300 group cursor-pointer shadow-lg text-left">
                     <div class="flex items-center gap-3.5">
                         <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 group-hover:scale-105 group-hover:bg-amber-500 group-hover:text-black transition-all flex-shrink-0">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                         </div>
                         <div>
-                            <span class="text-xs font-mono uppercase tracking-wider text-amber-400 font-bold block">Documentation and Technical Specifications</span>
-                            <span class="text-sm md:text-base font-semibold text-white group-hover:text-amber-300 transition-colors toggle-label">Click to expand the detailed description</span>
+                            <span class="text-sm md:text-base font-semibold text-white group-hover:text-amber-300 transition-colors toggle-label">TreeDuo Comparison &amp; Synchronisation description</span>
                         </div>
                     </div>
                     <div class="flex items-center gap-2.5 flex-shrink-0">
@@ -1126,7 +1085,7 @@
                     </div>
                 </button>
 
-                <div id="docs-content-treeduo" class="docs-content hidden pt-6 pb-2 docx-content transition-all duration-300">
+                <div id="docs-content-treeduo" class="docs-content hidden mt-4 p-5 md:p-8 rounded-2xl bg-[#0c101c]/75 border border-gray-800/60 docx-content transition-all duration-300">
                     
                     <div class="mt-10 mb-4 pb-2 border-b border-gray-800/80 flex items-center gap-3">
                         <span class="w-2 h-6 bg-gradient-to-b from-amber-400 to-orange-500 rounded-sm"></span>
@@ -1137,25 +1096,8 @@
                         <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
                         Purpose
                     </h4>
-<p class="text-gray-300/90 text-sm md:text-[15px] leading-relaxed my-3 font-normal">TreeDuo is a recursive two-tree comparison and synchronisation assistant. It compares complete directory trees rooted at side A and side B, projects a unified result in a virtual tab and separates read-only inspection from any write plan.</p>
-<p class="text-gray-300/90 text-sm md:text-[15px] leading-relaxed my-3 font-normal">Typical uses are:</p>
-<ul class="space-y-2.5 my-3 pl-1 text-gray-300">
-
-                    <li class="flex items-start gap-2.5 text-sm md:text-base leading-relaxed">
-                        <svg class="w-2 h-2 text-sky-400 mt-1.5 flex-shrink-0" fill="currentColor" viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>
-                        <div class="flex-1"><strong class="text-white font-semibold">Review</strong> — find missing, newer, equal and conflicting entries;</div>
-                    </li>
-
-                    <li class="flex items-start gap-2.5 text-sm md:text-base leading-relaxed">
-                        <svg class="w-2 h-2 text-sky-400 mt-1.5 flex-shrink-0" fill="currentColor" viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>
-                        <div class="flex-1"><strong class="text-white font-semibold">Update</strong> — bring a destination up to date while retaining destination-only and destination-newer files;</div>
-                    </li>
-
-                    <li class="flex items-start gap-2.5 text-sm md:text-base leading-relaxed">
-                        <svg class="w-2 h-2 text-sky-400 mt-1.5 flex-shrink-0" fill="currentColor" viewBox="0 0 8 8"><circle cx="4" cy="4" r="3"/></svg>
-                        <div class="flex-1"><strong class="text-white font-semibold">Mirror</strong> — make the destination follow the source, optionally deleting destination extras after a separate warning.</div>
-                    </li>
-</ul>
+<p class="text-gray-300/90 text-sm md:text-[15px] leading-relaxed my-3 font-normal">TreeDuo is LightTreeFM&#8217;s recursive folder comparison and synchronisation assistant. It compares the complete directory trees rooted at two normal tabs, called side A and side B, and presents one unified result in a virtual TreeDuo tab. The original tabs and drawers remain available.</p>
+<p class="text-gray-300/90 text-sm md:text-[15px] leading-relaxed my-3 font-normal">The initial comparison is read-only. TreeDuo does not change files until an Update or Mirror mode has been selected in ACTIONS, GO has produced a complete preview and Proceed has been confirmed. Unlike a normal Copy command, a TreeDuo operation is a plan for the complete compared tree.</p>
 
                     <h4 class="text-base md:text-lg font-semibold text-amber-400/95 mt-7 mb-2.5 flex items-center gap-2">
                         <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
@@ -1324,6 +1266,9 @@
                         Bounded classic-system model
                     </h4>
 <p class="text-gray-300/90 text-sm md:text-[15px] leading-relaxed my-3 font-normal">The current comparison is bounded to 512 result entries and recursive depth 16. Inaccessible drawers, excessively long paths, memory exhaustion or bound violations actually stop the scan rather than applying a partial comparison.</p>
+                    <div class="mt-6 flex justify-end">
+                        <button type="button" onclick="collapseDocs('treeduo')" aria-controls="docs-content-treeduo" class="text-xs font-mono px-3 py-1.5 rounded-lg bg-gray-800 text-gray-300 hover:bg-amber-500/20 hover:text-amber-400 border border-gray-700 transition-colors">Collapse &#9650;</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1331,10 +1276,7 @@
     
 
     <section id="archives" class="scroll-mt-24 mb-16 md:mb-24">
-        <div class="rounded-3xl bg-[#0c101c]/90 border border-gray-800/80 p-6 md:p-10 shadow-2xl relative overflow-hidden backdrop-blur-sm">
-            <!-- Ambient subtle glow -->
-            <div class="absolute -top-24 -right-24 w-80 h-80 bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-sky-500/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="p-2 sm:p-4 md:p-10 relative">
 
             <!-- Section Header -->
             <div class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-800/80 pb-6 mb-8 relative z-10">
@@ -1343,11 +1285,6 @@
                         04
                     </span>
                     <div>
-                        <div class="flex items-center gap-2">
-                            <span class="text-[11px] font-mono uppercase tracking-widest text-amber-400 font-semibold">Virtual File Systems</span>
-                            <span class="text-gray-600">•</span>
-                            <span class="text-[11px] font-mono text-gray-500">AmigaOS Native</span>
-                        </div>
                         <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">Transparent Archive Integration (LHA, LZX, ZIP, ARC, DMS)</h2>
                     </div>
                 </div>
@@ -1361,14 +1298,10 @@
             <div class="relative z-10 mb-8">
                 
         <div class="mt-8">
-            <h4 class="text-sm font-mono uppercase tracking-wider text-gray-400 mb-4 flex items-center gap-2">
-                <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                Screenshots & Interface (3)
-            </h4>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('4 Archive configuration/archive configuration.jpg', 'Archive Format Handlers &amp; Tool Assignment Configuration')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('4 Archive configuration/archive configuration.jpg', 'Archive Format Handlers &amp; Tool Assignment Configuration')">
             <img src="IMAGES/4 Archive configuration/archive configuration.jpg" 
                  alt="Archive Format Handlers &amp; Tool Assignment Configuration" 
                  loading="lazy"
@@ -1382,14 +1315,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Format Setup</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Archive Format Handlers &amp; Tool Assignment Configuration">Archive Format Handlers &amp; Tool Assignment Configuration</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Format Setup</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('4 Archive configuration/archive commands.jpg', 'External Archive Command Line Arguments &amp; Flag Builders')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('4 Archive configuration/archive commands.jpg', 'External Archive Command Line Arguments &amp; Flag Builders')">
             <img src="IMAGES/4 Archive configuration/archive commands.jpg" 
                  alt="External Archive Command Line Arguments &amp; Flag Builders" 
                  loading="lazy"
@@ -1403,14 +1336,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Command Templates</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="External Archive Command Line Arguments &amp; Flag Builders">External Archive Command Line Arguments &amp; Flag Builders</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Command Templates</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('4 Archive configuration/Archives exploding.jpg', 'In-Place Virtual Archive Browsing &amp; Extraction Tree')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('4 Archive configuration/Archives exploding.jpg', 'In-Place Virtual Archive Browsing &amp; Extraction Tree')">
             <img src="IMAGES/4 Archive configuration/Archives exploding.jpg" 
                  alt="In-Place Virtual Archive Browsing &amp; Extraction Tree" 
                  loading="lazy"
@@ -1424,7 +1357,7 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Exploded Archive</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="In-Place Virtual Archive Browsing &amp; Extraction Tree">In-Place Virtual Archive Browsing &amp; Extraction Tree</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Exploded Archive</span>
         </div>
@@ -1441,14 +1374,13 @@
                         onclick="toggleDocs('archives')" 
                         id="docs-btn-archives"
                         aria-expanded="false"
-                        class="docs-toggle-btn w-full flex items-center justify-between p-4 md:p-5 rounded-2xl bg-[#111728] hover:bg-[#161f36] border border-amber-500/30 hover:border-amber-400/80 transition-all duration-300 group cursor-pointer shadow-lg text-left">
+                        class="docs-toggle-btn w-full flex items-center justify-between p-4 md:p-5 rounded-2xl bg-[#111728]/70 hover:bg-[#161f36]/80 border border-amber-500/30 hover:border-amber-400/80 transition-all duration-300 group cursor-pointer shadow-lg text-left">
                     <div class="flex items-center gap-3.5">
                         <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 group-hover:scale-105 group-hover:bg-amber-500 group-hover:text-black transition-all flex-shrink-0">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                         </div>
                         <div>
-                            <span class="text-xs font-mono uppercase tracking-wider text-amber-400 font-bold block">Documentation and Technical Specifications</span>
-                            <span class="text-sm md:text-base font-semibold text-white group-hover:text-amber-300 transition-colors toggle-label">Click to expand the detailed description</span>
+                            <span class="text-sm md:text-base font-semibold text-white group-hover:text-amber-300 transition-colors toggle-label">Archive Integration description</span>
                         </div>
                     </div>
                     <div class="flex items-center gap-2.5 flex-shrink-0">
@@ -1456,7 +1388,7 @@
                     </div>
                 </button>
 
-                <div id="docs-content-archives" class="docs-content hidden pt-6 pb-2 docx-content transition-all duration-300">
+                <div id="docs-content-archives" class="docs-content hidden mt-4 p-5 md:p-8 rounded-2xl bg-[#0c101c]/75 border border-gray-800/60 docx-content transition-all duration-300">
                     
                     <div class="mt-10 mb-4 pb-2 border-b border-gray-800/80 flex items-center gap-3">
                         <span class="w-2 h-6 bg-gradient-to-b from-amber-400 to-orange-500 rounded-sm"></span>
@@ -1772,6 +1704,9 @@
                     </li>
 </ul>
 <p class="text-gray-300/90 text-sm md:text-[15px] leading-relaxed my-3 font-normal">The same strategy can support suitable LHA Add/Create operations when selected sources share a drawer. T: must be writable. On systems with sufficient Fast RAM, normal in-process supervision is simpler and recommended.</p>
+                    <div class="mt-6 flex justify-end">
+                        <button type="button" onclick="collapseDocs('archives')" aria-controls="docs-content-archives" class="text-xs font-mono px-3 py-1.5 rounded-lg bg-gray-800 text-gray-300 hover:bg-amber-500/20 hover:text-amber-400 border border-gray-700 transition-colors">Collapse &#9650;</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1779,10 +1714,7 @@
     
 
     <section id="assigns" class="scroll-mt-24 mb-16 md:mb-24">
-        <div class="rounded-3xl bg-[#0c101c]/90 border border-gray-800/80 p-6 md:p-10 shadow-2xl relative overflow-hidden backdrop-blur-sm">
-            <!-- Ambient subtle glow -->
-            <div class="absolute -top-24 -right-24 w-80 h-80 bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-sky-500/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="p-2 sm:p-4 md:p-10 relative">
 
             <!-- Section Header -->
             <div class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-800/80 pb-6 mb-8 relative z-10">
@@ -1791,11 +1723,6 @@
                         05
                     </span>
                     <div>
-                        <div class="flex items-center gap-2">
-                            <span class="text-[11px] font-mono uppercase tracking-widest text-amber-400 font-semibold">AmigaDOS Integration</span>
-                            <span class="text-gray-600">•</span>
-                            <span class="text-[11px] font-mono text-gray-500">AmigaOS Native</span>
-                        </div>
                         <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">AmigaDOS Assigns Manager</h2>
                     </div>
                 </div>
@@ -1809,14 +1736,10 @@
             <div class="relative z-10 mb-8">
                 
         <div class="mt-8">
-            <h4 class="text-sm font-mono uppercase tracking-wider text-gray-400 mb-4 flex items-center gap-2">
-                <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                Screenshots & Interface (2)
-            </h4>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                 
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('5 Assings/Assign Main.jpg', 'Left Navigation Assigns Root &amp; System Volumes')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('5 Assings/Assign Main.jpg', 'Left Navigation Assigns Root &amp; System Volumes')">
             <img src="IMAGES/5 Assings/Assign Main.jpg" 
                  alt="Left Navigation Assigns Root &amp; System Volumes" 
                  loading="lazy"
@@ -1830,14 +1753,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Assign View</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Left Navigation Assigns Root &amp; System Volumes">Left Navigation Assigns Root &amp; System Volumes</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Assign View</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('5 Assings/Assign Manager.jpg', 'Interactive Assign Manager (Create, Add, Defer, Remove)')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('5 Assings/Assign Manager.jpg', 'Interactive Assign Manager (Create, Add, Defer, Remove)')">
             <img src="IMAGES/5 Assings/Assign Manager.jpg" 
                  alt="Interactive Assign Manager (Create, Add, Defer, Remove)" 
                  loading="lazy"
@@ -1851,7 +1774,7 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Assign Manager</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Interactive Assign Manager (Create, Add, Defer, Remove)">Interactive Assign Manager (Create, Add, Defer, Remove)</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Assign Manager</span>
         </div>
@@ -1868,14 +1791,13 @@
                         onclick="toggleDocs('assigns')" 
                         id="docs-btn-assigns"
                         aria-expanded="false"
-                        class="docs-toggle-btn w-full flex items-center justify-between p-4 md:p-5 rounded-2xl bg-[#111728] hover:bg-[#161f36] border border-amber-500/30 hover:border-amber-400/80 transition-all duration-300 group cursor-pointer shadow-lg text-left">
+                        class="docs-toggle-btn w-full flex items-center justify-between p-4 md:p-5 rounded-2xl bg-[#111728]/70 hover:bg-[#161f36]/80 border border-amber-500/30 hover:border-amber-400/80 transition-all duration-300 group cursor-pointer shadow-lg text-left">
                     <div class="flex items-center gap-3.5">
                         <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 group-hover:scale-105 group-hover:bg-amber-500 group-hover:text-black transition-all flex-shrink-0">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                         </div>
                         <div>
-                            <span class="text-xs font-mono uppercase tracking-wider text-amber-400 font-bold block">Documentation and Technical Specifications</span>
-                            <span class="text-sm md:text-base font-semibold text-white group-hover:text-amber-300 transition-colors toggle-label">Click to expand the detailed description</span>
+                            <span class="text-sm md:text-base font-semibold text-white group-hover:text-amber-300 transition-colors toggle-label">AmigaDOS Assigns description</span>
                         </div>
                     </div>
                     <div class="flex items-center gap-2.5 flex-shrink-0">
@@ -1883,7 +1805,7 @@
                     </div>
                 </button>
 
-                <div id="docs-content-assigns" class="docs-content hidden pt-6 pb-2 docx-content transition-all duration-300">
+                <div id="docs-content-assigns" class="docs-content hidden mt-4 p-5 md:p-8 rounded-2xl bg-[#0c101c]/75 border border-gray-800/60 docx-content transition-all duration-300">
                     
                     <div class="mt-10 mb-4 pb-2 border-b border-gray-800/80 flex items-center gap-3">
                         <span class="w-2 h-6 bg-gradient-to-b from-amber-400 to-orange-500 rounded-sm"></span>
@@ -1940,6 +1862,9 @@
                         Assigns view
                     </h4>
 <p class="text-gray-300/90 text-sm md:text-[15px] leading-relaxed my-3 font-normal">The left-view selector cycles from Volumes to Assigns, then Bookmarks and back to Volumes. Assigns view enumerates active AmigaDOS assigns and opens the selected target in the current tab. Assign rows are allocated on demand and released when leaving the view, avoiding a permanently resident table.</p>
+                    <div class="mt-6 flex justify-end">
+                        <button type="button" onclick="collapseDocs('assigns')" aria-controls="docs-content-assigns" class="text-xs font-mono px-3 py-1.5 rounded-lg bg-gray-800 text-gray-300 hover:bg-amber-500/20 hover:text-amber-400 border border-gray-700 transition-colors">Collapse &#9650;</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1947,10 +1872,7 @@
     
 
     <section id="bookmarks" class="scroll-mt-24 mb-16 md:mb-24">
-        <div class="rounded-3xl bg-[#0c101c]/90 border border-gray-800/80 p-6 md:p-10 shadow-2xl relative overflow-hidden backdrop-blur-sm">
-            <!-- Ambient subtle glow -->
-            <div class="absolute -top-24 -right-24 w-80 h-80 bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-sky-500/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="p-2 sm:p-4 md:p-10 relative">
 
             <!-- Section Header -->
             <div class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-800/80 pb-6 mb-8 relative z-10">
@@ -1959,11 +1881,6 @@
                         06
                     </span>
                     <div>
-                        <div class="flex items-center gap-2">
-                            <span class="text-[11px] font-mono uppercase tracking-widest text-amber-400 font-semibold">Quick Navigation</span>
-                            <span class="text-gray-600">•</span>
-                            <span class="text-[11px] font-mono text-gray-500">AmigaOS Native</span>
-                        </div>
                         <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">Persistent Drawer Bookmarks</h2>
                     </div>
                 </div>
@@ -1977,14 +1894,10 @@
             <div class="relative z-10 mb-8">
                 
         <div class="mt-8">
-            <h4 class="text-sm font-mono uppercase tracking-wider text-gray-400 mb-4 flex items-center gap-2">
-                <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                Screenshots & Interface (2)
-            </h4>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                 
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('6 Bookmarks/Bookmark Main.jpg', 'Bookmarks Group in the Left Tree Navigation View')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('6 Bookmarks/Bookmark Main.jpg', 'Bookmarks Group in the Left Tree Navigation View')">
             <img src="IMAGES/6 Bookmarks/Bookmark Main.jpg" 
                  alt="Bookmarks Group in the Left Tree Navigation View" 
                  loading="lazy"
@@ -1998,14 +1911,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Bookmarks List</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Bookmarks Group in the Left Tree Navigation View">Bookmarks Group in the Left Tree Navigation View</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Bookmarks List</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('6 Bookmarks/Bookmark Manager.jpg', 'Bookmark Manager Dialog (Reorder, Edit, Add, Remove)')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('6 Bookmarks/Bookmark Manager.jpg', 'Bookmark Manager Dialog (Reorder, Edit, Add, Remove)')">
             <img src="IMAGES/6 Bookmarks/Bookmark Manager.jpg" 
                  alt="Bookmark Manager Dialog (Reorder, Edit, Add, Remove)" 
                  loading="lazy"
@@ -2019,7 +1932,7 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Bookmark Manager</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Bookmark Manager Dialog (Reorder, Edit, Add, Remove)">Bookmark Manager Dialog (Reorder, Edit, Add, Remove)</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Bookmark Manager</span>
         </div>
@@ -2036,14 +1949,13 @@
                         onclick="toggleDocs('bookmarks')" 
                         id="docs-btn-bookmarks"
                         aria-expanded="false"
-                        class="docs-toggle-btn w-full flex items-center justify-between p-4 md:p-5 rounded-2xl bg-[#111728] hover:bg-[#161f36] border border-amber-500/30 hover:border-amber-400/80 transition-all duration-300 group cursor-pointer shadow-lg text-left">
+                        class="docs-toggle-btn w-full flex items-center justify-between p-4 md:p-5 rounded-2xl bg-[#111728]/70 hover:bg-[#161f36]/80 border border-amber-500/30 hover:border-amber-400/80 transition-all duration-300 group cursor-pointer shadow-lg text-left">
                     <div class="flex items-center gap-3.5">
                         <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 group-hover:scale-105 group-hover:bg-amber-500 group-hover:text-black transition-all flex-shrink-0">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                         </div>
                         <div>
-                            <span class="text-xs font-mono uppercase tracking-wider text-amber-400 font-bold block">Documentation and Technical Specifications</span>
-                            <span class="text-sm md:text-base font-semibold text-white group-hover:text-amber-300 transition-colors toggle-label">Click to expand the detailed description</span>
+                            <span class="text-sm md:text-base font-semibold text-white group-hover:text-amber-300 transition-colors toggle-label">Drawer Bookmarks description</span>
                         </div>
                     </div>
                     <div class="flex items-center gap-2.5 flex-shrink-0">
@@ -2051,7 +1963,7 @@
                     </div>
                 </button>
 
-                <div id="docs-content-bookmarks" class="docs-content hidden pt-6 pb-2 docx-content transition-all duration-300">
+                <div id="docs-content-bookmarks" class="docs-content hidden mt-4 p-5 md:p-8 rounded-2xl bg-[#0c101c]/75 border border-gray-800/60 docx-content transition-all duration-300">
                     
                     <h4 class="text-base md:text-lg font-semibold text-amber-400/95 mt-7 mb-2.5 flex items-center gap-2">
                         <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
@@ -2124,6 +2036,9 @@
                         <div class="flex-1">discard it with Cancel.</div>
                     </li>
 </ul>
+                    <div class="mt-6 flex justify-end">
+                        <button type="button" onclick="collapseDocs('bookmarks')" aria-controls="docs-content-bookmarks" class="text-xs font-mono px-3 py-1.5 rounded-lg bg-gray-800 text-gray-300 hover:bg-amber-500/20 hover:text-amber-400 border border-gray-700 transition-colors">Collapse &#9650;</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2131,10 +2046,7 @@
     
 
     <section id="diskops" class="scroll-mt-24 mb-16 md:mb-24">
-        <div class="rounded-3xl bg-[#0c101c]/90 border border-gray-800/80 p-6 md:p-10 shadow-2xl relative overflow-hidden backdrop-blur-sm">
-            <!-- Ambient subtle glow -->
-            <div class="absolute -top-24 -right-24 w-80 h-80 bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-sky-500/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="p-2 sm:p-4 md:p-10 relative">
 
             <!-- Section Header -->
             <div class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-800/80 pb-6 mb-8 relative z-10">
@@ -2143,11 +2055,6 @@
                         07
                     </span>
                     <div>
-                        <div class="flex items-center gap-2">
-                            <span class="text-[11px] font-mono uppercase tracking-widest text-amber-400 font-semibold">Floppy & Disk Media</span>
-                            <span class="text-gray-600">•</span>
-                            <span class="text-[11px] font-mono text-gray-500">AmigaOS Native</span>
-                        </div>
                         <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">Disk Operations & ADF Image Tools</h2>
                     </div>
                 </div>
@@ -2161,14 +2068,10 @@
             <div class="relative z-10 mb-8">
                 
         <div class="mt-8">
-            <h4 class="text-sm font-mono uppercase tracking-wider text-gray-400 mb-4 flex items-center gap-2">
-                <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                Screenshots & Interface (4)
-            </h4>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('7 Disk Operations/ADF OPS.jpg', 'ADF Media Operations (Floppy to ADF Image / ADF to Floppy)')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('7 Disk Operations/ADF OPS.jpg', 'ADF Media Operations (Floppy to ADF Image / ADF to Floppy)')">
             <img src="IMAGES/7 Disk Operations/ADF OPS.jpg" 
                  alt="ADF Media Operations (Floppy to ADF Image / ADF to Floppy)" 
                  loading="lazy"
@@ -2182,14 +2085,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">ADF Ops</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="ADF Media Operations (Floppy to ADF Image / ADF to Floppy)">ADF Media Operations (Floppy to ADF Image / ADF to Floppy)</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">ADF Ops</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('7 Disk Operations/DiskOPs FOrmat.jpg', 'Native Floppy Disk Formatting, FFS Volume &amp; Verification')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('7 Disk Operations/DiskOPs FOrmat.jpg', 'Native Floppy Disk Formatting, FFS Volume &amp; Verification')">
             <img src="IMAGES/7 Disk Operations/DiskOPs FOrmat.jpg" 
                  alt="Native Floppy Disk Formatting, FFS Volume &amp; Verification" 
                  loading="lazy"
@@ -2203,14 +2106,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Format Floppy</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Native Floppy Disk Formatting, FFS Volume &amp; Verification">Native Floppy Disk Formatting, FFS Volume &amp; Verification</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Format Floppy</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('7 Disk Operations/copy disk.jpg', 'Track-by-Track High-Speed Floppy Copy with Swap Guidance')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('7 Disk Operations/copy disk.jpg', 'Track-by-Track High-Speed Floppy Copy with Swap Guidance')">
             <img src="IMAGES/7 Disk Operations/copy disk.jpg" 
                  alt="Track-by-Track High-Speed Floppy Copy with Swap Guidance" 
                  loading="lazy"
@@ -2224,14 +2127,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Disk Copy</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Track-by-Track High-Speed Floppy Copy with Swap Guidance">Track-by-Track High-Speed Floppy Copy with Swap Guidance</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Disk Copy</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('7 Disk Operations/adf exploding.jpg', 'ADF Virtual Image Browsing as Transparent Subtree')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('7 Disk Operations/adf exploding.jpg', 'ADF Virtual Image Browsing as Transparent Subtree')">
             <img src="IMAGES/7 Disk Operations/adf exploding.jpg" 
                  alt="ADF Virtual Image Browsing as Transparent Subtree" 
                  loading="lazy"
@@ -2245,7 +2148,7 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">ADF Tree Browser</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="ADF Virtual Image Browsing as Transparent Subtree">ADF Virtual Image Browsing as Transparent Subtree</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">ADF Tree Browser</span>
         </div>
@@ -2262,14 +2165,13 @@
                         onclick="toggleDocs('diskops')" 
                         id="docs-btn-diskops"
                         aria-expanded="false"
-                        class="docs-toggle-btn w-full flex items-center justify-between p-4 md:p-5 rounded-2xl bg-[#111728] hover:bg-[#161f36] border border-amber-500/30 hover:border-amber-400/80 transition-all duration-300 group cursor-pointer shadow-lg text-left">
+                        class="docs-toggle-btn w-full flex items-center justify-between p-4 md:p-5 rounded-2xl bg-[#111728]/70 hover:bg-[#161f36]/80 border border-amber-500/30 hover:border-amber-400/80 transition-all duration-300 group cursor-pointer shadow-lg text-left">
                     <div class="flex items-center gap-3.5">
                         <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 group-hover:scale-105 group-hover:bg-amber-500 group-hover:text-black transition-all flex-shrink-0">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                         </div>
                         <div>
-                            <span class="text-xs font-mono uppercase tracking-wider text-amber-400 font-bold block">Documentation and Technical Specifications</span>
-                            <span class="text-sm md:text-base font-semibold text-white group-hover:text-amber-300 transition-colors toggle-label">Click to expand the detailed description</span>
+                            <span class="text-sm md:text-base font-semibold text-white group-hover:text-amber-300 transition-colors toggle-label">Disk Operations &amp; ADF Tools description</span>
                         </div>
                     </div>
                     <div class="flex items-center gap-2.5 flex-shrink-0">
@@ -2277,7 +2179,7 @@
                     </div>
                 </button>
 
-                <div id="docs-content-diskops" class="docs-content hidden pt-6 pb-2 docx-content transition-all duration-300">
+                <div id="docs-content-diskops" class="docs-content hidden mt-4 p-5 md:p-8 rounded-2xl bg-[#0c101c]/75 border border-gray-800/60 docx-content transition-all duration-300">
                     
                     <div class="mt-10 mb-4 pb-2 border-b border-gray-800/80 flex items-center gap-3">
                         <span class="w-2 h-6 bg-gradient-to-b from-amber-400 to-orange-500 rounded-sm"></span>
@@ -2442,6 +2344,9 @@
                     </li>
 </ul>
 <p class="text-gray-300/90 text-sm md:text-[15px] leading-relaxed my-3 font-normal">confirm before overwriting destination media.</p>
+                    <div class="mt-6 flex justify-end">
+                        <button type="button" onclick="collapseDocs('diskops')" aria-controls="docs-content-diskops" class="text-xs font-mono px-3 py-1.5 rounded-lg bg-gray-800 text-gray-300 hover:bg-amber-500/20 hover:text-amber-400 border border-gray-700 transition-colors">Collapse &#9650;</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2449,10 +2354,7 @@
     
 
     <section id="associations" class="scroll-mt-24 mb-16 md:mb-24">
-        <div class="rounded-3xl bg-[#0c101c]/90 border border-gray-800/80 p-6 md:p-10 shadow-2xl relative overflow-hidden backdrop-blur-sm">
-            <!-- Ambient subtle glow -->
-            <div class="absolute -top-24 -right-24 w-80 h-80 bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-sky-500/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="p-2 sm:p-4 md:p-10 relative">
 
             <!-- Section Header -->
             <div class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-800/80 pb-6 mb-8 relative z-10">
@@ -2461,11 +2363,6 @@
                         08
                     </span>
                     <div>
-                        <div class="flex items-center gap-2">
-                            <span class="text-[11px] font-mono uppercase tracking-widest text-amber-400 font-semibold">Application Launcher</span>
-                            <span class="text-gray-600">•</span>
-                            <span class="text-[11px] font-mono text-gray-500">AmigaOS Native</span>
-                        </div>
                         <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">File Associations & Application Launching</h2>
                     </div>
                 </div>
@@ -2479,14 +2376,10 @@
             <div class="relative z-10 mb-8">
                 
         <div class="mt-8">
-            <h4 class="text-sm font-mono uppercase tracking-wider text-gray-400 mb-4 flex items-center gap-2">
-                <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                Screenshots & Interface (1)
-            </h4>
             <div class="grid grid-cols-1 max-w-2xl mx-auto gap-5">
                 
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('8 FIle Associations/Files Association.jpg', 'File Association Manager &amp; CLI/Workbench Launch Templates')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('8 FIle Associations/Files Association.jpg', 'File Association Manager &amp; CLI/Workbench Launch Templates')">
             <img src="IMAGES/8 FIle Associations/Files Association.jpg" 
                  alt="File Association Manager &amp; CLI/Workbench Launch Templates" 
                  loading="lazy"
@@ -2500,7 +2393,7 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Associations</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="File Association Manager &amp; CLI/Workbench Launch Templates">File Association Manager &amp; CLI/Workbench Launch Templates</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Associations</span>
         </div>
@@ -2517,14 +2410,13 @@
                         onclick="toggleDocs('associations')" 
                         id="docs-btn-associations"
                         aria-expanded="false"
-                        class="docs-toggle-btn w-full flex items-center justify-between p-4 md:p-5 rounded-2xl bg-[#111728] hover:bg-[#161f36] border border-amber-500/30 hover:border-amber-400/80 transition-all duration-300 group cursor-pointer shadow-lg text-left">
+                        class="docs-toggle-btn w-full flex items-center justify-between p-4 md:p-5 rounded-2xl bg-[#111728]/70 hover:bg-[#161f36]/80 border border-amber-500/30 hover:border-amber-400/80 transition-all duration-300 group cursor-pointer shadow-lg text-left">
                     <div class="flex items-center gap-3.5">
                         <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 group-hover:scale-105 group-hover:bg-amber-500 group-hover:text-black transition-all flex-shrink-0">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                         </div>
                         <div>
-                            <span class="text-xs font-mono uppercase tracking-wider text-amber-400 font-bold block">Documentation and Technical Specifications</span>
-                            <span class="text-sm md:text-base font-semibold text-white group-hover:text-amber-300 transition-colors toggle-label">Click to expand the detailed description</span>
+                            <span class="text-sm md:text-base font-semibold text-white group-hover:text-amber-300 transition-colors toggle-label">File Associations description</span>
                         </div>
                     </div>
                     <div class="flex items-center gap-2.5 flex-shrink-0">
@@ -2532,7 +2424,7 @@
                     </div>
                 </button>
 
-                <div id="docs-content-associations" class="docs-content hidden pt-6 pb-2 docx-content transition-all duration-300">
+                <div id="docs-content-associations" class="docs-content hidden mt-4 p-5 md:p-8 rounded-2xl bg-[#0c101c]/75 border border-gray-800/60 docx-content transition-all duration-300">
                     
                     <div class="mt-10 mb-4 pb-2 border-b border-gray-800/80 flex items-center gap-3">
                         <span class="w-2 h-6 bg-gradient-to-b from-amber-400 to-orange-500 rounded-sm"></span>
@@ -2652,6 +2544,9 @@
                     </li>
 </ul>
 <p class="text-gray-300/90 text-sm md:text-[15px] leading-relaxed my-3 font-normal">LightTreeFM associations, Workbench icon Default Tool and raw ToolTypes are separate stores. Editing one never rewrites the others implicitly.</p>
+                    <div class="mt-6 flex justify-end">
+                        <button type="button" onclick="collapseDocs('associations')" aria-controls="docs-content-associations" class="text-xs font-mono px-3 py-1.5 rounded-lg bg-gray-800 text-gray-300 hover:bg-amber-500/20 hover:text-amber-400 border border-gray-700 transition-colors">Collapse &#9650;</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2659,10 +2554,7 @@
     
 
     <section id="preferences" class="scroll-mt-24 mb-16 md:mb-24">
-        <div class="rounded-3xl bg-[#0c101c]/90 border border-gray-800/80 p-6 md:p-10 shadow-2xl relative overflow-hidden backdrop-blur-sm">
-            <!-- Ambient subtle glow -->
-            <div class="absolute -top-24 -right-24 w-80 h-80 bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-sky-500/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="p-2 sm:p-4 md:p-10 relative">
 
             <!-- Section Header -->
             <div class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-800/80 pb-6 mb-8 relative z-10">
@@ -2671,11 +2563,6 @@
                         09
                     </span>
                     <div>
-                        <div class="flex items-center gap-2">
-                            <span class="text-[11px] font-mono uppercase tracking-widest text-amber-400 font-semibold">Control Panel</span>
-                            <span class="text-gray-600">•</span>
-                            <span class="text-[11px] font-mono text-gray-500">AmigaOS Native</span>
-                        </div>
                         <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">System Preferences (LTFPrefsTool)</h2>
                     </div>
                 </div>
@@ -2689,14 +2576,10 @@
             <div class="relative z-10 mb-8">
                 
         <div class="mt-8">
-            <h4 class="text-sm font-mono uppercase tracking-wider text-gray-400 mb-4 flex items-center gap-2">
-                <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                Screenshots & Interface (4)
-            </h4>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('9 Preferences/preferences 0.jpg', 'Files Preferences: Paste Space Check, Selection Stats, Tabs')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('9 Preferences/preferences 0.jpg', 'Files Preferences: Paste Space Check, Selection Stats, Tabs')">
             <img src="IMAGES/9 Preferences/preferences 0.jpg" 
                  alt="Files Preferences: Paste Space Check, Selection Stats, Tabs" 
                  loading="lazy"
@@ -2710,14 +2593,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Files Tab</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Files Preferences: Paste Space Check, Selection Stats, Tabs">Files Preferences: Paste Space Check, Selection Stats, Tabs</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Files Tab</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('9 Preferences/preferences 1.jpg', 'Disk Preferences: Temporary Buffer Path for Constrained RAM')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('9 Preferences/preferences 1.jpg', 'Disk Preferences: Temporary Buffer Path for Constrained RAM')">
             <img src="IMAGES/9 Preferences/preferences 1.jpg" 
                  alt="Disk Preferences: Temporary Buffer Path for Constrained RAM" 
                  loading="lazy"
@@ -2731,14 +2614,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Disk Tab</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Disk Preferences: Temporary Buffer Path for Constrained RAM">Disk Preferences: Temporary Buffer Path for Constrained RAM</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Disk Tab</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('9 Preferences/preferences 2.jpg', 'Layout Preferences: Screen Mode, Color Depth, Themes &amp; Columns')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('9 Preferences/preferences 2.jpg', 'Layout Preferences: Screen Mode, Color Depth, Themes &amp; Columns')">
             <img src="IMAGES/9 Preferences/preferences 2.jpg" 
                  alt="Layout Preferences: Screen Mode, Color Depth, Themes &amp; Columns" 
                  loading="lazy"
@@ -2752,14 +2635,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Layout Tab</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Layout Preferences: Screen Mode, Color Depth, Themes &amp; Columns">Layout Preferences: Screen Mode, Color Depth, Themes &amp; Columns</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Layout Tab</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('9 Preferences/preferences 3.jpg', 'Fonts Preferences: Screen Font &amp; Scalable/Custom Font Selection')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('9 Preferences/preferences 3.jpg', 'Fonts Preferences: Screen Font &amp; Scalable/Custom Font Selection')">
             <img src="IMAGES/9 Preferences/preferences 3.jpg" 
                  alt="Fonts Preferences: Screen Font &amp; Scalable/Custom Font Selection" 
                  loading="lazy"
@@ -2773,7 +2656,7 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Fonts Tab</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Fonts Preferences: Screen Font &amp; Scalable/Custom Font Selection">Fonts Preferences: Screen Font &amp; Scalable/Custom Font Selection</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Fonts Tab</span>
         </div>
@@ -2790,14 +2673,13 @@
                         onclick="toggleDocs('preferences')" 
                         id="docs-btn-preferences"
                         aria-expanded="false"
-                        class="docs-toggle-btn w-full flex items-center justify-between p-4 md:p-5 rounded-2xl bg-[#111728] hover:bg-[#161f36] border border-amber-500/30 hover:border-amber-400/80 transition-all duration-300 group cursor-pointer shadow-lg text-left">
+                        class="docs-toggle-btn w-full flex items-center justify-between p-4 md:p-5 rounded-2xl bg-[#111728]/70 hover:bg-[#161f36]/80 border border-amber-500/30 hover:border-amber-400/80 transition-all duration-300 group cursor-pointer shadow-lg text-left">
                     <div class="flex items-center gap-3.5">
                         <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 group-hover:scale-105 group-hover:bg-amber-500 group-hover:text-black transition-all flex-shrink-0">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                         </div>
                         <div>
-                            <span class="text-xs font-mono uppercase tracking-wider text-amber-400 font-bold block">Documentation and Technical Specifications</span>
-                            <span class="text-sm md:text-base font-semibold text-white group-hover:text-amber-300 transition-colors toggle-label">Click to expand the detailed description</span>
+                            <span class="text-sm md:text-base font-semibold text-white group-hover:text-amber-300 transition-colors toggle-label">System Preferences description</span>
                         </div>
                     </div>
                     <div class="flex items-center gap-2.5 flex-shrink-0">
@@ -2805,7 +2687,7 @@
                     </div>
                 </button>
 
-                <div id="docs-content-preferences" class="docs-content hidden pt-6 pb-2 docx-content transition-all duration-300">
+                <div id="docs-content-preferences" class="docs-content hidden mt-4 p-5 md:p-8 rounded-2xl bg-[#0c101c]/75 border border-gray-800/60 docx-content transition-all duration-300">
                     
                     <div class="mt-10 mb-4 pb-2 border-b border-gray-800/80 flex items-center gap-3">
                         <span class="w-2 h-6 bg-gradient-to-b from-amber-400 to-orange-500 rounded-sm"></span>
@@ -2975,6 +2857,9 @@
                     </li>
 </ul>
 <p class="text-gray-300/90 text-sm md:text-[15px] leading-relaxed my-3 font-normal">Bounded codecs reject malformed or overlong records without replacing a valid in-memory model. Relevant saves use temporary files, verification and atomic installation/reconciliation so a failed volatile update does not silently destroy the persistent copy.</p>
+                    <div class="mt-6 flex justify-end">
+                        <button type="button" onclick="collapseDocs('preferences')" aria-controls="docs-content-preferences" class="text-xs font-mono px-3 py-1.5 rounded-lg bg-gray-800 text-gray-300 hover:bg-amber-500/20 hover:text-amber-400 border border-gray-700 transition-colors">Collapse &#9650;</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2982,10 +2867,7 @@
     
 
     <section id="properties" class="scroll-mt-24 mb-16 md:mb-24">
-        <div class="rounded-3xl bg-[#0c101c]/90 border border-gray-800/80 p-6 md:p-10 shadow-2xl relative overflow-hidden backdrop-blur-sm">
-            <!-- Ambient subtle glow -->
-            <div class="absolute -top-24 -right-24 w-80 h-80 bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-sky-500/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="p-2 sm:p-4 md:p-10 relative">
 
             <!-- Section Header -->
             <div class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-800/80 pb-6 mb-8 relative z-10">
@@ -2994,11 +2876,6 @@
                         10
                     </span>
                     <div>
-                        <div class="flex items-center gap-2">
-                            <span class="text-[11px] font-mono uppercase tracking-widest text-amber-400 font-semibold">Metadata Inspector</span>
-                            <span class="text-gray-600">•</span>
-                            <span class="text-[11px] font-mono text-gray-500">AmigaOS Native</span>
-                        </div>
                         <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">Properties Inspector & Protection Bits</h2>
                     </div>
                 </div>
@@ -3012,14 +2889,10 @@
             <div class="relative z-10 mb-8">
                 
         <div class="mt-8">
-            <h4 class="text-sm font-mono uppercase tracking-wider text-gray-400 mb-4 flex items-center gap-2">
-                <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                Screenshots & Interface (3)
-            </h4>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('10 Properties/Proerties Main.jpg', 'Properties Main Window: File Size, Timestamps, Comment &amp; Bits')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('10 Properties/Proerties Main.jpg', 'Properties Main Window: File Size, Timestamps, Comment &amp; Bits')">
             <img src="IMAGES/10 Properties/Proerties Main.jpg" 
                  alt="Properties Main Window: File Size, Timestamps, Comment &amp; Bits" 
                  loading="lazy"
@@ -3033,14 +2906,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Item Properties</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Properties Main Window: File Size, Timestamps, Comment &amp; Bits">Properties Main Window: File Size, Timestamps, Comment &amp; Bits</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Item Properties</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('10 Properties/Proerties ICON.jpg', 'Workbench Icon (.info) &amp; ToolTypes Metadata Inspector')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('10 Properties/Proerties ICON.jpg', 'Workbench Icon (.info) &amp; ToolTypes Metadata Inspector')">
             <img src="IMAGES/10 Properties/Proerties ICON.jpg" 
                  alt="Workbench Icon (.info) &amp; ToolTypes Metadata Inspector" 
                  loading="lazy"
@@ -3054,14 +2927,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Icon &amp; ToolTypes</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Workbench Icon (.info) &amp; ToolTypes Metadata Inspector">Workbench Icon (.info) &amp; ToolTypes Metadata Inspector</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Icon &amp; ToolTypes</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('10 Properties/Multiple Elements Protection bits change.jpg', 'Batch Multi-Selection Protection Flags (HSPARWED) Editor')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('10 Properties/Multiple Elements Protection bits change.jpg', 'Batch Multi-Selection Protection Flags (HSPARWED) Editor')">
             <img src="IMAGES/10 Properties/Multiple Elements Protection bits change.jpg" 
                  alt="Batch Multi-Selection Protection Flags (HSPARWED) Editor" 
                  loading="lazy"
@@ -3075,7 +2948,7 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Batch Flags</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Batch Multi-Selection Protection Flags (HSPARWED) Editor">Batch Multi-Selection Protection Flags (HSPARWED) Editor</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Batch Flags</span>
         </div>
@@ -3092,14 +2965,13 @@
                         onclick="toggleDocs('properties')" 
                         id="docs-btn-properties"
                         aria-expanded="false"
-                        class="docs-toggle-btn w-full flex items-center justify-between p-4 md:p-5 rounded-2xl bg-[#111728] hover:bg-[#161f36] border border-amber-500/30 hover:border-amber-400/80 transition-all duration-300 group cursor-pointer shadow-lg text-left">
+                        class="docs-toggle-btn w-full flex items-center justify-between p-4 md:p-5 rounded-2xl bg-[#111728]/70 hover:bg-[#161f36]/80 border border-amber-500/30 hover:border-amber-400/80 transition-all duration-300 group cursor-pointer shadow-lg text-left">
                     <div class="flex items-center gap-3.5">
                         <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 group-hover:scale-105 group-hover:bg-amber-500 group-hover:text-black transition-all flex-shrink-0">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                         </div>
                         <div>
-                            <span class="text-xs font-mono uppercase tracking-wider text-amber-400 font-bold block">Documentation and Technical Specifications</span>
-                            <span class="text-sm md:text-base font-semibold text-white group-hover:text-amber-300 transition-colors toggle-label">Click to expand the detailed description</span>
+                            <span class="text-sm md:text-base font-semibold text-white group-hover:text-amber-300 transition-colors toggle-label">Properties &amp; Protection Bits description</span>
                         </div>
                     </div>
                     <div class="flex items-center gap-2.5 flex-shrink-0">
@@ -3107,7 +2979,7 @@
                     </div>
                 </button>
 
-                <div id="docs-content-properties" class="docs-content hidden pt-6 pb-2 docx-content transition-all duration-300">
+                <div id="docs-content-properties" class="docs-content hidden mt-4 p-5 md:p-8 rounded-2xl bg-[#0c101c]/75 border border-gray-800/60 docx-content transition-all duration-300">
                     
                     <div class="mt-10 mb-4 pb-2 border-b border-gray-800/80 flex items-center gap-3">
                         <span class="w-2 h-6 bg-gradient-to-b from-amber-400 to-orange-500 rounded-sm"></span>
@@ -3469,6 +3341,9 @@
                     </h4>
 <p class="text-gray-300/90 text-sm md:text-[15px] leading-relaxed my-3 font-normal">Icon editing and creation use a verified temporary sibling, backup replacement and rollback strategy. A newly appeared destination .info is never overwritten accidentally. Short temporary names remain compatible with classic 30-character AmigaDOS filename components.</p>
 <p class="text-gray-300/90 text-sm md:text-[15px] leading-relaxed my-3 font-normal">After ordinary property writes, LightTreeFM refreshes only affected cached metadata where possible. Protection/comment changes do not automatically reset the whole file-list viewport. Icon creation or sort-relevant structural changes can trigger a preserving full reload when required.</p>
+                    <div class="mt-6 flex justify-end">
+                        <button type="button" onclick="collapseDocs('properties')" aria-controls="docs-content-properties" class="text-xs font-mono px-3 py-1.5 rounded-lg bg-gray-800 text-gray-300 hover:bg-amber-500/20 hover:text-amber-400 border border-gray-700 transition-colors">Collapse &#9650;</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -3476,10 +3351,7 @@
     
 
     <section id="themes" class="scroll-mt-24 mb-16 md:mb-24">
-        <div class="rounded-3xl bg-[#0c101c]/90 border border-gray-800/80 p-6 md:p-10 shadow-2xl relative overflow-hidden backdrop-blur-sm">
-            <!-- Ambient subtle glow -->
-            <div class="absolute -top-24 -right-24 w-80 h-80 bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-sky-500/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="p-2 sm:p-4 md:p-10 relative">
 
             <!-- Section Header -->
             <div class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-800/80 pb-6 mb-8 relative z-10">
@@ -3488,11 +3360,6 @@
                         11
                     </span>
                     <div>
-                        <div class="flex items-center gap-2">
-                            <span class="text-[11px] font-mono uppercase tracking-widest text-amber-400 font-semibold">Visual Styling</span>
-                            <span class="text-gray-600">•</span>
-                            <span class="text-[11px] font-mono text-gray-500">AmigaOS Native</span>
-                        </div>
                         <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">Workbench Themes & Palette Showcase</h2>
                     </div>
                 </div>
@@ -3521,8 +3388,8 @@
             <!-- Tab 1: Mosaics (Solo Orizzontali) -->
             <div id="theme-tab-mosaics" class="grid grid-cols-1 gap-6">
                 
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-[4563/1044] bg-[#0b0f19]" onclick="openLightbox('11 Themes/Dark Themes/LightTreeFM_palette_mosaic_orizontal.jpg', 'Dark Theme Palettes Mosaic (Horizontal Grid)')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-[4563/1044] bg-transparent" onclick="openLightbox('11 Themes/Dark Themes/LightTreeFM_palette_mosaic_orizontal.jpg', 'Dark Theme Palettes Mosaic (Horizontal Grid)')">
             <img src="IMAGES/11 Themes/Dark Themes/LightTreeFM_palette_mosaic_orizontal.jpg" 
                  alt="Dark Theme Palettes Mosaic (Horizontal Grid)" 
                  loading="lazy"
@@ -3536,14 +3403,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Dark Mosaics</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Dark Theme Palettes Mosaic (Horizontal Grid)">Dark Theme Palettes Mosaic (Horizontal Grid)</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Dark Mosaics</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-[4563/1044] bg-[#0b0f19]" onclick="openLightbox('11 Themes/LightTThemes/LightTreeFM_light_palette_mosaic_horizontal.jpg', 'Light Theme Palettes Mosaic (Horizontal Grid)')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-[4563/1044] bg-transparent" onclick="openLightbox('11 Themes/LightTThemes/LightTreeFM_light_palette_mosaic_horizontal.jpg', 'Light Theme Palettes Mosaic (Horizontal Grid)')">
             <img src="IMAGES/11 Themes/LightTThemes/LightTreeFM_light_palette_mosaic_horizontal.jpg" 
                  alt="Light Theme Palettes Mosaic (Horizontal Grid)" 
                  loading="lazy"
@@ -3557,7 +3424,7 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Light Mosaics</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Light Theme Palettes Mosaic (Horizontal Grid)">Light Theme Palettes Mosaic (Horizontal Grid)</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Light Mosaics</span>
         </div>
@@ -3568,8 +3435,8 @@
             <!-- Tab 2: Dark Themes -->
             <div id="theme-tab-dark" class="hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                 
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/Dark Themes/Blue Steel Dark.jpg', 'Theme: Blue Steel Dark')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/Dark Themes/Blue Steel Dark.jpg', 'Theme: Blue Steel Dark')">
             <img src="IMAGES/11 Themes/Dark Themes/Blue Steel Dark.jpg" 
                  alt="Theme: Blue Steel Dark" 
                  loading="lazy"
@@ -3583,14 +3450,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Dark Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Blue Steel Dark">Theme: Blue Steel Dark</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Dark Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/Dark Themes/Cool Slate Dark.jpg', 'Theme: Cool Slate Dark')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/Dark Themes/Cool Slate Dark.jpg', 'Theme: Cool Slate Dark')">
             <img src="IMAGES/11 Themes/Dark Themes/Cool Slate Dark.jpg" 
                  alt="Theme: Cool Slate Dark" 
                  loading="lazy"
@@ -3604,14 +3471,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Dark Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Cool Slate Dark">Theme: Cool Slate Dark</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Dark Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/Dark Themes/CRT Green Dark.jpg', 'Theme: CRT Green Dark')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/Dark Themes/CRT Green Dark.jpg', 'Theme: CRT Green Dark')">
             <img src="IMAGES/11 Themes/Dark Themes/CRT Green Dark.jpg" 
                  alt="Theme: CRT Green Dark" 
                  loading="lazy"
@@ -3625,14 +3492,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Dark Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: CRT Green Dark">Theme: CRT Green Dark</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Dark Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/Dark Themes/Current Brown Dark.jpg', 'Theme: Current Brown Dark')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/Dark Themes/Current Brown Dark.jpg', 'Theme: Current Brown Dark')">
             <img src="IMAGES/11 Themes/Dark Themes/Current Brown Dark.jpg" 
                  alt="Theme: Current Brown Dark" 
                  loading="lazy"
@@ -3646,14 +3513,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Dark Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Current Brown Dark">Theme: Current Brown Dark</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Dark Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/Dark Themes/Dawn Amber Dark.jpg', 'Theme: Dawn Amber Dark')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/Dark Themes/Dawn Amber Dark.jpg', 'Theme: Dawn Amber Dark')">
             <img src="IMAGES/11 Themes/Dark Themes/Dawn Amber Dark.jpg" 
                  alt="Theme: Dawn Amber Dark" 
                  loading="lazy"
@@ -3667,14 +3534,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Dark Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Dawn Amber Dark">Theme: Dawn Amber Dark</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Dark Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/Dark Themes/Graphite Desk Dark.jpg', 'Theme: Graphite Desk Dark')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/Dark Themes/Graphite Desk Dark.jpg', 'Theme: Graphite Desk Dark')">
             <img src="IMAGES/11 Themes/Dark Themes/Graphite Desk Dark.jpg" 
                  alt="Theme: Graphite Desk Dark" 
                  loading="lazy"
@@ -3688,14 +3555,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Dark Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Graphite Desk Dark">Theme: Graphite Desk Dark</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Dark Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/Dark Themes/High Contrast Dark.jpg', 'Theme: High Contrast Dark')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/Dark Themes/High Contrast Dark.jpg', 'Theme: High Contrast Dark')">
             <img src="IMAGES/11 Themes/Dark Themes/High Contrast Dark.jpg" 
                  alt="Theme: High Contrast Dark" 
                  loading="lazy"
@@ -3709,14 +3576,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Dark Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: High Contrast Dark">Theme: High Contrast Dark</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Dark Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/Dark Themes/Low Glare dark.jpg', 'Theme: Low Glare Dark')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/Dark Themes/Low Glare dark.jpg', 'Theme: Low Glare Dark')">
             <img src="IMAGES/11 Themes/Dark Themes/Low Glare dark.jpg" 
                  alt="Theme: Low Glare Dark" 
                  loading="lazy"
@@ -3730,14 +3597,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Dark Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Low Glare Dark">Theme: Low Glare Dark</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Dark Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/Dark Themes/Midnight Cyan Dark.jpg', 'Theme: Midnight Cyan Dark')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/Dark Themes/Midnight Cyan Dark.jpg', 'Theme: Midnight Cyan Dark')">
             <img src="IMAGES/11 Themes/Dark Themes/Midnight Cyan Dark.jpg" 
                  alt="Theme: Midnight Cyan Dark" 
                  loading="lazy"
@@ -3751,14 +3618,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Dark Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Midnight Cyan Dark">Theme: Midnight Cyan Dark</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Dark Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/Dark Themes/MysticWB Dark.jpg', 'Theme: MysticWB Dark')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/Dark Themes/MysticWB Dark.jpg', 'Theme: MysticWB Dark')">
             <img src="IMAGES/11 Themes/Dark Themes/MysticWB Dark.jpg" 
                  alt="Theme: MysticWB Dark" 
                  loading="lazy"
@@ -3772,14 +3639,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Dark Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: MysticWB Dark">Theme: MysticWB Dark</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Dark Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/Dark Themes/Olive Terminal Dark.jpg', 'Theme: Olive Terminal Dark')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/Dark Themes/Olive Terminal Dark.jpg', 'Theme: Olive Terminal Dark')">
             <img src="IMAGES/11 Themes/Dark Themes/Olive Terminal Dark.jpg" 
                  alt="Theme: Olive Terminal Dark" 
                  loading="lazy"
@@ -3793,14 +3660,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Dark Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Olive Terminal Dark">Theme: Olive Terminal Dark</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Dark Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/Dark Themes/Sepia Desk Dark.jpg', 'Theme: Sepia Desk Dark')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/Dark Themes/Sepia Desk Dark.jpg', 'Theme: Sepia Desk Dark')">
             <img src="IMAGES/11 Themes/Dark Themes/Sepia Desk Dark.jpg" 
                  alt="Theme: Sepia Desk Dark" 
                  loading="lazy"
@@ -3814,14 +3681,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Dark Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Sepia Desk Dark">Theme: Sepia Desk Dark</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Dark Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/Dark Themes/Storm Grey Dark.jpg', 'Theme: Storm Grey Dark')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/Dark Themes/Storm Grey Dark.jpg', 'Theme: Storm Grey Dark')">
             <img src="IMAGES/11 Themes/Dark Themes/Storm Grey Dark.jpg" 
                  alt="Theme: Storm Grey Dark" 
                  loading="lazy"
@@ -3835,14 +3702,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Dark Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Storm Grey Dark">Theme: Storm Grey Dark</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Dark Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/Dark Themes/Warm Amber Dark.jpg', 'Theme: Warm Amber Dark')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/Dark Themes/Warm Amber Dark.jpg', 'Theme: Warm Amber Dark')">
             <img src="IMAGES/11 Themes/Dark Themes/Warm Amber Dark.jpg" 
                  alt="Theme: Warm Amber Dark" 
                  loading="lazy"
@@ -3856,7 +3723,7 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Dark Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Warm Amber Dark">Theme: Warm Amber Dark</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Dark Theme</span>
         </div>
@@ -3867,8 +3734,8 @@
             <!-- Tab 3: Light Themes -->
             <div id="theme-tab-light" class="hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
                 
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/LightTThemes/Artic Paper Light.jpg', 'Theme: Artic Paper Light')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/LightTThemes/Artic Paper Light.jpg', 'Theme: Artic Paper Light')">
             <img src="IMAGES/11 Themes/LightTThemes/Artic Paper Light.jpg" 
                  alt="Theme: Artic Paper Light" 
                  loading="lazy"
@@ -3882,14 +3749,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Light Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Artic Paper Light">Theme: Artic Paper Light</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Light Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/LightTThemes/Blue Porcelain Light.jpg', 'Theme: Blue Porcelain Light')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/LightTThemes/Blue Porcelain Light.jpg', 'Theme: Blue Porcelain Light')">
             <img src="IMAGES/11 Themes/LightTThemes/Blue Porcelain Light.jpg" 
                  alt="Theme: Blue Porcelain Light" 
                  loading="lazy"
@@ -3903,14 +3770,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Light Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Blue Porcelain Light">Theme: Blue Porcelain Light</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Light Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/LightTThemes/Classic Ivory Light.jpg', 'Theme: Classic Ivory Light')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/LightTThemes/Classic Ivory Light.jpg', 'Theme: Classic Ivory Light')">
             <img src="IMAGES/11 Themes/LightTThemes/Classic Ivory Light.jpg" 
                  alt="Theme: Classic Ivory Light" 
                  loading="lazy"
@@ -3924,14 +3791,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Light Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Classic Ivory Light">Theme: Classic Ivory Light</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Light Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/LightTThemes/Cloud Lilac Light.jpg', 'Theme: Cloud Lilac Light')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/LightTThemes/Cloud Lilac Light.jpg', 'Theme: Cloud Lilac Light')">
             <img src="IMAGES/11 Themes/LightTThemes/Cloud Lilac Light.jpg" 
                  alt="Theme: Cloud Lilac Light" 
                  loading="lazy"
@@ -3945,14 +3812,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Light Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Cloud Lilac Light">Theme: Cloud Lilac Light</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Light Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/LightTThemes/Golden Paper Light.jpg', 'Theme: Golden Paper Light')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/LightTThemes/Golden Paper Light.jpg', 'Theme: Golden Paper Light')">
             <img src="IMAGES/11 Themes/LightTThemes/Golden Paper Light.jpg" 
                  alt="Theme: Golden Paper Light" 
                  loading="lazy"
@@ -3966,14 +3833,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Light Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Golden Paper Light">Theme: Golden Paper Light</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Light Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/LightTThemes/Lavender Mist Light.jpg', 'Theme: Lavender Mist Light')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/LightTThemes/Lavender Mist Light.jpg', 'Theme: Lavender Mist Light')">
             <img src="IMAGES/11 Themes/LightTThemes/Lavender Mist Light.jpg" 
                  alt="Theme: Lavender Mist Light" 
                  loading="lazy"
@@ -3987,14 +3854,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Light Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Lavender Mist Light">Theme: Lavender Mist Light</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Light Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/LightTThemes/Mint Studio Light.jpg', 'Theme: Mint Studio Light')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/LightTThemes/Mint Studio Light.jpg', 'Theme: Mint Studio Light')">
             <img src="IMAGES/11 Themes/LightTThemes/Mint Studio Light.jpg" 
                  alt="Theme: Mint Studio Light" 
                  loading="lazy"
@@ -4008,14 +3875,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Light Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Mint Studio Light">Theme: Mint Studio Light</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Light Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/LightTThemes/Mystic Workbench Light.jpg', 'Theme: Mystic Workbench Light')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/LightTThemes/Mystic Workbench Light.jpg', 'Theme: Mystic Workbench Light')">
             <img src="IMAGES/11 Themes/LightTThemes/Mystic Workbench Light.jpg" 
                  alt="Theme: Mystic Workbench Light" 
                  loading="lazy"
@@ -4029,14 +3896,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Light Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Mystic Workbench Light">Theme: Mystic Workbench Light</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Light Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/LightTThemes/Ocean Glass Light.jpg', 'Theme: Ocean Glass Light')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/LightTThemes/Ocean Glass Light.jpg', 'Theme: Ocean Glass Light')">
             <img src="IMAGES/11 Themes/LightTThemes/Ocean Glass Light.jpg" 
                  alt="Theme: Ocean Glass Light" 
                  loading="lazy"
@@ -4050,14 +3917,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Light Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Ocean Glass Light">Theme: Ocean Glass Light</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Light Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/LightTThemes/Pastel Rainbow Light.jpg', 'Theme: Pastel Rainbow Light')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/LightTThemes/Pastel Rainbow Light.jpg', 'Theme: Pastel Rainbow Light')">
             <img src="IMAGES/11 Themes/LightTThemes/Pastel Rainbow Light.jpg" 
                  alt="Theme: Pastel Rainbow Light" 
                  loading="lazy"
@@ -4071,14 +3938,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Light Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Pastel Rainbow Light">Theme: Pastel Rainbow Light</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Light Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/LightTThemes/Rose Paper Light.jpg', 'Theme: Rose Paper Light')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/LightTThemes/Rose Paper Light.jpg', 'Theme: Rose Paper Light')">
             <img src="IMAGES/11 Themes/LightTThemes/Rose Paper Light.jpg" 
                  alt="Theme: Rose Paper Light" 
                  loading="lazy"
@@ -4092,14 +3959,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Light Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Rose Paper Light">Theme: Rose Paper Light</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Light Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/LightTThemes/Sage Desk Light.jpg', 'Theme: Sage Desk Light')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/LightTThemes/Sage Desk Light.jpg', 'Theme: Sage Desk Light')">
             <img src="IMAGES/11 Themes/LightTThemes/Sage Desk Light.jpg" 
                  alt="Theme: Sage Desk Light" 
                  loading="lazy"
@@ -4113,14 +3980,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Light Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Sage Desk Light">Theme: Sage Desk Light</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Light Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/LightTThemes/Sand Stone Light.jpg', 'Theme: Sand Stone Light')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/LightTThemes/Sand Stone Light.jpg', 'Theme: Sand Stone Light')">
             <img src="IMAGES/11 Themes/LightTThemes/Sand Stone Light.jpg" 
                  alt="Theme: Sand Stone Light" 
                  loading="lazy"
@@ -4134,14 +4001,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Light Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Sand Stone Light">Theme: Sand Stone Light</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Light Theme</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('11 Themes/LightTThemes/Seafoam Desk Light.jpg', 'Theme: Seafoam Desk Light')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('11 Themes/LightTThemes/Seafoam Desk Light.jpg', 'Theme: Seafoam Desk Light')">
             <img src="IMAGES/11 Themes/LightTThemes/Seafoam Desk Light.jpg" 
                  alt="Theme: Seafoam Desk Light" 
                  loading="lazy"
@@ -4155,7 +4022,7 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Light Theme</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Theme: Seafoam Desk Light">Theme: Seafoam Desk Light</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Light Theme</span>
         </div>
@@ -4172,14 +4039,13 @@
                         onclick="toggleDocs('themes')" 
                         id="docs-btn-themes"
                         aria-expanded="false"
-                        class="docs-toggle-btn w-full flex items-center justify-between p-4 md:p-5 rounded-2xl bg-[#111728] hover:bg-[#161f36] border border-amber-500/30 hover:border-amber-400/80 transition-all duration-300 group cursor-pointer shadow-lg text-left">
+                        class="docs-toggle-btn w-full flex items-center justify-between p-4 md:p-5 rounded-2xl bg-[#111728]/70 hover:bg-[#161f36]/80 border border-amber-500/30 hover:border-amber-400/80 transition-all duration-300 group cursor-pointer shadow-lg text-left">
                     <div class="flex items-center gap-3.5">
                         <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 group-hover:scale-105 group-hover:bg-amber-500 group-hover:text-black transition-all flex-shrink-0">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                         </div>
                         <div>
-                            <span class="text-xs font-mono uppercase tracking-wider text-amber-400 font-bold block">Documentation and Technical Specifications</span>
-                            <span class="text-sm md:text-base font-semibold text-white group-hover:text-amber-300 transition-colors toggle-label">Click to expand the detailed description</span>
+                            <span class="text-sm md:text-base font-semibold text-white group-hover:text-amber-300 transition-colors toggle-label">Workbench Themes &amp; Palettes description</span>
                         </div>
                     </div>
                     <div class="flex items-center gap-2.5 flex-shrink-0">
@@ -4187,7 +4053,7 @@
                     </div>
                 </button>
 
-                <div id="docs-content-themes" class="docs-content hidden pt-6 pb-2 docx-content transition-all duration-300">
+                <div id="docs-content-themes" class="docs-content hidden mt-4 p-5 md:p-8 rounded-2xl bg-[#0c101c]/75 border border-gray-800/60 docx-content transition-all duration-300">
                     
                     <div class="mt-10 mb-4 pb-2 border-b border-gray-800/80 flex items-center gap-3">
                         <span class="w-2 h-6 bg-gradient-to-b from-amber-400 to-orange-500 rounded-sm"></span>
@@ -4370,6 +4236,9 @@
                         25.5 Public-screen safety
                     </h4>
 <p class="text-gray-300/90 text-sm md:text-[15px] leading-relaxed my-3 font-normal">LightTreeFM does not rewrite public Workbench palettes as an implicit side effect of opening a window. Earlier experimental public palette/theme paths are normalised back to Classic in the current Preferences UI. Public RTG drawing is ownership-neutral: no LoadRGB, speculative pen leasing or palette restoration is required for ordinary operation.</p>
+                    <div class="mt-6 flex justify-end">
+                        <button type="button" onclick="collapseDocs('themes')" aria-controls="docs-content-themes" class="text-xs font-mono px-3 py-1.5 rounded-lg bg-gray-800 text-gray-300 hover:bg-amber-500/20 hover:text-amber-400 border border-gray-700 transition-colors">Collapse &#9650;</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -4377,10 +4246,7 @@
     
 
     <section id="volumes" class="scroll-mt-24 mb-16 md:mb-24">
-        <div class="rounded-3xl bg-[#0c101c]/90 border border-gray-800/80 p-6 md:p-10 shadow-2xl relative overflow-hidden backdrop-blur-sm">
-            <!-- Ambient subtle glow -->
-            <div class="absolute -top-24 -right-24 w-80 h-80 bg-amber-500/5 rounded-full blur-3xl pointer-events-none"></div>
-            <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-sky-500/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="p-2 sm:p-4 md:p-10 relative">
 
             <!-- Section Header -->
             <div class="flex flex-wrap items-center justify-between gap-4 border-b border-gray-800/80 pb-6 mb-8 relative z-10">
@@ -4389,11 +4255,6 @@
                         12
                     </span>
                     <div>
-                        <div class="flex items-center gap-2">
-                            <span class="text-[11px] font-mono uppercase tracking-widest text-amber-400 font-semibold">System Diagnostics</span>
-                            <span class="text-gray-600">•</span>
-                            <span class="text-[11px] font-mono text-gray-500">AmigaOS Native</span>
-                        </div>
                         <h2 class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">Volume & Filesystem Information</h2>
                     </div>
                 </div>
@@ -4407,14 +4268,10 @@
             <div class="relative z-10 mb-8">
                 
         <div class="mt-8">
-            <h4 class="text-sm font-mono uppercase tracking-wider text-gray-400 mb-4 flex items-center gap-2">
-                <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                Screenshots & Interface (2)
-            </h4>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                 
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('12 Volumes Information/vol.jpg', 'Volume Information on a Classic Amiga: Chip RAM Usage')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('12 Volumes Information/vol.jpg', 'Volume Information on a Classic Amiga: Chip RAM Usage')">
             <img src="IMAGES/12 Volumes Information/vol.jpg" 
                  alt="Volume Information on a Classic Amiga: Chip RAM Usage" 
                  loading="lazy"
@@ -4428,14 +4285,14 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">Classic Amiga</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Volume Information on a Classic Amiga: Chip RAM Usage">Volume Information on a Classic Amiga: Chip RAM Usage</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">Classic Amiga</span>
         </div>
     </div>
     
-    <div class="group relative rounded-2xl overflow-hidden bg-[#131929] border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
-        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-[#0b0f19]" onclick="openLightbox('12 Volumes Information/vol_rtg.jpg', 'Volume Information on RTG: Chip RAM and Fast RAM Usage')">
+    <div class="group relative rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/10 flex flex-col ">
+        <div class="relative overflow-hidden cursor-zoom-in aspect-video bg-transparent" onclick="openLightbox('12 Volumes Information/vol_rtg.jpg', 'Volume Information on RTG: Chip RAM and Fast RAM Usage')">
             <img src="IMAGES/12 Volumes Information/vol_rtg.jpg" 
                  alt="Volume Information on RTG: Chip RAM and Fast RAM Usage" 
                  loading="lazy"
@@ -4449,7 +4306,7 @@
                 <span class="text-[11px] font-mono font-semibold px-2 py-0.5 rounded bg-amber-500 text-black uppercase">RTG Screen</span>
             </div>
         </div>
-        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-[#101524]">
+        <div class="p-3.5 flex items-center justify-between gap-2 border-t border-gray-800/80 bg-black/20">
             <p class="text-xs md:text-sm font-medium text-gray-300 truncate" title="Volume Information on RTG: Chip RAM and Fast RAM Usage">Volume Information on RTG: Chip RAM and Fast RAM Usage</p>
             <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 whitespace-nowrap">RTG Screen</span>
         </div>
@@ -4466,14 +4323,13 @@
                         onclick="toggleDocs('volumes')" 
                         id="docs-btn-volumes"
                         aria-expanded="false"
-                        class="docs-toggle-btn w-full flex items-center justify-between p-4 md:p-5 rounded-2xl bg-[#111728] hover:bg-[#161f36] border border-amber-500/30 hover:border-amber-400/80 transition-all duration-300 group cursor-pointer shadow-lg text-left">
+                        class="docs-toggle-btn w-full flex items-center justify-between p-4 md:p-5 rounded-2xl bg-[#111728]/70 hover:bg-[#161f36]/80 border border-amber-500/30 hover:border-amber-400/80 transition-all duration-300 group cursor-pointer shadow-lg text-left">
                     <div class="flex items-center gap-3.5">
                         <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 group-hover:scale-105 group-hover:bg-amber-500 group-hover:text-black transition-all flex-shrink-0">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
                         </div>
                         <div>
-                            <span class="text-xs font-mono uppercase tracking-wider text-amber-400 font-bold block">Documentation and Technical Specifications</span>
-                            <span class="text-sm md:text-base font-semibold text-white group-hover:text-amber-300 transition-colors toggle-label">Click to expand the detailed description</span>
+                            <span class="text-sm md:text-base font-semibold text-white group-hover:text-amber-300 transition-colors toggle-label">Volume &amp; Filesystem Information description</span>
                         </div>
                     </div>
                     <div class="flex items-center gap-2.5 flex-shrink-0">
@@ -4481,7 +4337,7 @@
                     </div>
                 </button>
 
-                <div id="docs-content-volumes" class="docs-content hidden pt-6 pb-2 docx-content transition-all duration-300">
+                <div id="docs-content-volumes" class="docs-content hidden mt-4 p-5 md:p-8 rounded-2xl bg-[#0c101c]/75 border border-gray-800/60 docx-content transition-all duration-300">
                     
                     <div class="mt-10 mb-4 pb-2 border-b border-gray-800/80 flex items-center gap-3">
                         <span class="w-2 h-6 bg-gradient-to-b from-amber-400 to-orange-500 rounded-sm"></span>
@@ -4605,6 +4461,9 @@
                     </li>
 </ul>
 <p class="text-gray-300/90 text-sm md:text-[15px] leading-relaxed my-3 font-normal">It expunges only unused system libraries, devices and fonts. It does <strong class="text-white font-semibold">not</strong> delete RAM: files, close programs, reclaim resources still in use or repair a leak owned by another program. Missing C:Avail produces an AmigaDOS error and does not change the workspace</p>
+                    <div class="mt-6 flex justify-end">
+                        <button type="button" onclick="collapseDocs('volumes')" aria-controls="docs-content-volumes" class="text-xs font-mono px-3 py-1.5 rounded-lg bg-gray-800 text-gray-300 hover:bg-amber-500/20 hover:text-amber-400 border border-gray-700 transition-colors">Collapse &#9650;</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -4750,23 +4609,31 @@
 
             const isHidden = content.classList.contains('hidden');
             const badge = btn.querySelector('.toggle-badge');
-            const label = btn.querySelector('.toggle-label');
 
             if (isHidden) {
                 content.classList.remove('hidden');
                 btn.setAttribute('aria-expanded', 'true');
-                btn.classList.add('border-amber-400', 'bg-[#151d33]');
-                btn.classList.remove('border-amber-500/30', 'bg-[#111728]');
+                btn.classList.add('border-amber-400', 'bg-[#151d33]/75');
+                btn.classList.remove('border-amber-500/30', 'bg-[#111728]/70');
                 if (badge) badge.textContent = 'Hide text ▲';
-                if (label) label.textContent = 'Click to collapse the description';
             } else {
                 content.classList.add('hidden');
                 btn.setAttribute('aria-expanded', 'false');
-                btn.classList.remove('border-amber-400', 'bg-[#151d33]');
-                btn.classList.add('border-amber-500/30', 'bg-[#111728]');
+                btn.classList.remove('border-amber-400', 'bg-[#151d33]/75');
+                btn.classList.add('border-amber-500/30', 'bg-[#111728]/70');
                 if (badge) badge.textContent = 'Show text ▼';
-                if (label) label.textContent = 'Click to expand the detailed description';
             }
+        }
+
+        function collapseDocs(secId) {
+            const content = document.getElementById('docs-content-' + secId);
+            const btn = document.getElementById('docs-btn-' + secId);
+            if (!content || !btn || content.classList.contains('hidden')) return;
+
+            toggleDocs(secId);
+            btn.focus({ preventScroll: true });
+            const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            btn.scrollIntoView({ behavior: reducedMotion ? 'instant' : 'smooth', block: 'center' });
         }
 
         function openSectionDocs(secId) {
@@ -4776,12 +4643,10 @@
 
             content.classList.remove('hidden');
             btn.setAttribute('aria-expanded', 'true');
-            btn.classList.add('border-amber-400', 'bg-[#151d33]');
-            btn.classList.remove('border-amber-500/30', 'bg-[#111728]');
+            btn.classList.add('border-amber-400', 'bg-[#151d33]/75');
+            btn.classList.remove('border-amber-500/30', 'bg-[#111728]/70');
             const badge = btn.querySelector('.toggle-badge');
-            const label = btn.querySelector('.toggle-label');
             if (badge) badge.textContent = 'Hide text ▲';
-            if (label) label.textContent = 'Click to collapse the description';
         }
 
         function openSectionFromNav(secId) {
