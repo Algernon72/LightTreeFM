@@ -181,6 +181,62 @@
     <!-- MAIN BODY: 12 SECTIONS -->
     <main class="showcase-main max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24">
         
+    <section id="videos" aria-labelledby="videos-title" class="scroll-mt-24 mb-16 md:mb-24">
+        <div class="p-2 sm:p-4 md:p-10">
+            <div class="border-b border-gray-800/80 pb-6 mb-8">
+                <h2 id="videos-title" class="text-2xl md:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">Watch LightTreeFM in action</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <article class="rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg">
+                    <div class="aspect-video bg-black">
+                        <a href="https://youtu.be/eEDnJZiAJJA" data-video-id="eEDnJZiAJJA" class="group relative block w-full h-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-4px] focus-visible:outline-amber-400" aria-label="Play LightTreeFM on a Classic Amiga">
+                            <img src="https://i.ytimg.com/vi/eEDnJZiAJJA/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" class="w-full h-full object-cover" />
+                            <span class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors" aria-hidden="true">
+                                <span class="flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 text-black font-extrabold shadow-lg">&#9654; Play</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-white">LightTreeFM on a Classic Amiga</h3>
+                        <p class="mt-2 text-sm text-gray-400">New features running on a native PAL screen</p>
+                    </div>
+                </article>
+                <article class="rounded-2xl overflow-hidden bg-[#0c101c]/70 border border-gray-800/90 hover:border-amber-500/50 transition-all duration-300 shadow-lg">
+                    <div class="aspect-video bg-black">
+                        <a href="https://youtu.be/05-jDFCEPlA" data-video-id="05-jDFCEPlA" class="group relative block w-full h-full focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-4px] focus-visible:outline-amber-400" aria-label="Play LightTreeFM on RTG">
+                            <img src="https://i.ytimg.com/vi/05-jDFCEPlA/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" class="w-full h-full object-cover" />
+                            <span class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors" aria-hidden="true">
+                                <span class="flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 text-black font-extrabold shadow-lg">&#9654; Play</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-lg font-bold text-white">LightTreeFM on RTG</h3>
+                        <p class="mt-2 text-sm text-gray-400">Scalable interface, custom fonts and modern resolutions</p>
+                    </div>
+                </article>
+            </div>
+            <p class="mt-8 text-center text-sm md:text-base text-gray-400">From native PAL to high-resolution RTG &mdash; the same LightTreeFM experience.</p>
+        </div>
+    </section>
+    <script>
+        document.querySelectorAll('#videos [data-video-id]').forEach(function (preview) {
+            preview.addEventListener('click', function (event) {
+                if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+                event.preventDefault();
+                const player = document.createElement('iframe');
+                player.src = 'https://www.youtube-nocookie.com/embed/' + preview.dataset.videoId + '?autoplay=1';
+                player.title = preview.closest('article').querySelector('h3').textContent;
+                player.className = 'w-full h-full border-0';
+                player.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+                player.allowFullscreen = true;
+                player.referrerPolicy = 'strict-origin-when-cross-origin';
+                preview.replaceWith(player);
+                player.focus();
+            });
+        });
+    </script>
+
     <section id="overview" class="scroll-mt-24 mb-16 md:mb-24">
         <div class="p-2 sm:p-4 md:p-10 relative">
 
