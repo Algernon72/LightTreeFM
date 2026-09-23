@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://algernon72.github.io/LightTreeFM/sitemap.xml
