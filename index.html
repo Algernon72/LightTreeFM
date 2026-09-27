@@ -229,9 +229,125 @@
                         <span class="text-xs uppercase font-mono px-2 py-1 rounded bg-black/20 text-black/80 font-bold">itch.io</span>
                     </a>
                 </div>
+
+                <!-- NEWS: add new articles first and move older updates into the archive. -->
+                <section id="news" aria-labelledby="news-title" class="mt-8 scroll-mt-24 rounded-2xl border border-amber-500/30 bg-[#0c101c]/95 p-5 sm:p-7 shadow-lg shadow-black/20">
+                    <div class="flex flex-wrap items-center justify-between gap-3 mb-5">
+                        <h2 id="news-title" class="flex items-center gap-3 text-xl sm:text-2xl font-bold text-white">
+                            <span aria-hidden="true" class="h-2.5 w-2.5 rounded-full bg-amber-400"></span>
+                            Latest news
+                        </h2>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row gap-6">
+                    <details id="news-list" class="order-2 md:order-1 md:w-60 md:flex-shrink-0 border-t md:border-t-0 md:border-r border-gray-700/60 pt-4 md:pt-0 md:pr-5">
+                        <summary class="md:hidden cursor-pointer text-sm font-semibold text-amber-300">News archive</summary>
+                        <p class="hidden md:block text-xs uppercase tracking-wider text-gray-400 mb-3">Updates</p>
+                        <nav aria-label="News updates" class="space-y-2 mt-3 md:mt-0">
+                            <button type="button" data-news="latest" aria-current="true" class="news-choice"><span>Community feedback · latest update</span>First Improvements Already Implemented</button>
+                        </nav>
+                    </details>
+                    <div id="news-content" class="news-scroll order-1 md:order-2 min-w-0 flex-1" tabindex="0" role="region" aria-label="Selected news content" aria-live="polite">
+                    <article data-news-panel="latest" class="news-article" aria-labelledby="latest-news-title">
+                        <span class="inline-block rounded-md border border-amber-500/30 bg-amber-500/10 px-2 py-1 text-xs font-semibold tracking-wide text-amber-300 mb-3">COMMUNITY FEEDBACK</span>
+                        <h3 id="latest-news-title" class="text-lg sm:text-xl font-bold text-white">LightTreeFM – Community Feedback Update: First Improvements Already Implemented</h3>
+                        <p>The first feedback after the Autumn Release has already turned into real improvements.</p>
+                        <p>A LightTreeFM user provided a detailed set of observations after testing the new release on both Workbench and Custom Screen configurations. Several of those suggestions have now been implemented.</p>
+                        <div class="news-passage">
+                            <figure class="news-photo">
+                                <a href="IMAGES/news/left-panel-cycle.jpg" onclick="openLightbox('news/left-panel-cycle.jpg', 'Improved left-panel cycle button'); return false;" aria-label="Enlarge screenshot of the left-panel cycle button">
+                                    <img src="IMAGES/news/left-panel-cycle.jpg" width="663" height="531" alt="Workbench interface with a red arrow pointing to the left-panel cycle button" loading="lazy" />
+                                </a>
+                                <figcaption>The left-panel cycle button.</figcaption>
+                            </figure>
+                            <p>The <strong>left-panel cycle button</strong> has been improved so that its behaviour is clearer and its displayed state better matches what the user is currently seeing, reducing the ambiguity between the current state and the next available one.</p>
+                            <p><strong>Window position and size can now persist across reboots</strong>, making the Save Session behaviour much more useful in everyday use. On the first launch, LightTreeFM also opens in a more Workbench-friendly position, avoiding the Workbench title bar.</p>
+                        </div>
+                        <div class="news-passage">
+                            <figure class="news-photo news-photo-left">
+                                <a href="IMAGES/news/custom-screen.jpg" onclick="openLightbox('news/custom-screen.jpg', 'LightTreeFM Custom Screen title bar'); return false;" aria-label="Enlarge screenshot of the Custom Screen">
+                                    <img src="IMAGES/news/custom-screen.jpg" width="644" height="516" alt="LightTreeFM Custom Screen with the application name and version in the title bar" loading="lazy" />
+                                </a>
+                                <figcaption>The refined Custom Screen title bar.</figcaption>
+                            </figure>
+                            <p>The <strong>Custom Screen experience has also been refined</strong>, with a proper title bar showing the LightTreeFM name and version and providing the expected window controls.</p>
+                        </div>
+                        <div class="news-passage">
+                            <figure class="news-photo">
+                                <a href="IMAGES/news/single-instance.jpg" onclick="openLightbox('news/single-instance.jpg', 'LightTreeFM is already running'); return false;" aria-label="Enlarge screenshot of single-instance detection">
+                                    <img src="IMAGES/news/single-instance.jpg" width="678" height="540" alt="Workbench dialog stating LightTreeFM is already running" loading="lazy" />
+                                </a>
+                                <figcaption>The running instance is detected.</figcaption>
+                            </figure>
+                            <p>Finally, LightTreeFM now uses a <strong>single-instance policy</strong>. Attempting to start another instance no longer risks conflicts with an already active Custom Screen session; the running instance is detected instead.</p>
+                            <p>These may look like small details individually, but they are exactly the kind of refinements that make an application feel more predictable and comfortable in daily use.</p>
+                        </div>
+                        <p>This is also the first example of what I hope will become an important part of LightTreeFM development: <strong>real-world testing, user feedback, and rapid refinement without abandoning compatibility with classic Amiga systems.</strong></p>
+                        <p>Many thanks to the users who are spending their time testing LightTreeFM and reporting these details.</p>
+                        <p class="news-closing"><strong>The next LightTreeFM update will include these improvements together with the first round of post-release fixes.</strong></p>
+                    </article>
+                    </div>
+                    </div>
+                </section>
             </div>
         </div>
     </section>
+
+    <style>
+        .news-article p { margin-top: 16px; text-align: justify; font-size: 15px; color: #cbd5e1; }
+        .news-article strong { color: #f1f5f9; font-weight: 600; }
+        .news-passage { display: flow-root; margin-top: 20px; }
+        .news-passage p:first-of-type { margin-top: 0; }
+        .news-photo { float: right; width: 46%; margin: 0 0 12px 20px; }
+        .news-photo-left { float: left; margin: 0 20px 12px 0; }
+        .news-photo img { width: 100%; height: auto; border: 1px solid #374151; border-radius: 8px; }
+        .news-photo a { display: block; cursor: zoom-in; }
+        .news-photo figcaption { font-size: 11px; color: #9ca3af; margin-top: 6px; text-align: left; }
+        .news-closing { padding: 16px; border-left: 2px solid #fbbf24; background: rgba(245,158,11,.07); }
+        @media (max-width: 1023px) { .news-photo, .news-photo-left { float: none; width: 100%; margin: 0 0 16px; } }
+        .news-scroll { height: 560px; overflow-y: auto; overscroll-behavior-y: contain; scrollbar-gutter: stable; padding-right: 16px; }
+        .news-scroll:focus-visible { outline: 2px solid #fbbf24; outline-offset: 4px; border-radius: 4px; }
+        #news-list { max-height: 560px; overflow-y: auto; }
+        @media (max-width: 767px) {
+            .news-scroll { height: min(520px, 65svh); min-height: 300px; padding-right: 10px; }
+            #news-list { max-height: 280px; }
+        }
+        .news-choice { display:block; width:100%; padding:12px; text-align:left; border:1px solid transparent; border-radius:12px; color:#cbd5e1; font-size:14px; font-weight:600; }
+        .news-choice span { display:block; font-size:11px; color:#9ca3af; font-weight:400; margin-bottom:4px; }
+        .news-choice:hover { background:rgba(255,255,255,.04); }
+        .news-choice[aria-current="true"] { background:rgba(245,158,11,.1); border-color:rgba(245,158,11,.35); color:#fcd34d; }
+        .news-choice:focus-visible { outline:2px solid #fbbf24; outline-offset:2px; }
+    </style>
+    <script>
+        (() => {
+            const desktop = window.matchMedia('(min-width: 768px)');
+            const list = document.getElementById('news-list');
+            const sync = () => { list.open = desktop.matches; };
+            sync();
+            desktop.addEventListener('change', sync);
+            document.querySelectorAll('[data-news]').forEach(button => {
+                button.setAttribute('aria-controls', 'news-content');
+                button.addEventListener('click', () => {
+                    document.querySelectorAll('[data-news-panel]').forEach(panel => {
+                        panel.hidden = panel.dataset.newsPanel !== button.dataset.news;
+                    });
+                    document.querySelectorAll('[data-news]').forEach(item => {
+                        if (item === button) item.setAttribute('aria-current', 'true');
+                        else item.removeAttribute('aria-current');
+                    });
+                    document.getElementById('news-content').scrollTop = 0;
+                    if (!desktop.matches) {
+                        list.open = false;
+                        const heading = document.querySelector('[data-news-panel="' + button.dataset.news + '"] h3');
+                        heading.tabIndex = -1;
+                        heading.style.scrollMarginTop = '100px';
+                        heading.focus({ preventScroll:true });
+                        heading.scrollIntoView({ block:'start', behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+                    }
+                });
+            });
+        })();
+    </script>
 
     <!-- MAIN BODY: 12 SECTIONS -->
     <main class="showcase-main max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24">
