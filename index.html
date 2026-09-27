@@ -230,7 +230,7 @@
                     </a>
                 </div>
 
-                <!-- NEWS: add new articles first and move older updates into the archive. -->
+                <!-- NEWS: add new articles first, always include their publication date using time datetime="YYYY-MM-DD", and move older updates into the archive. -->
                 <section id="news" aria-labelledby="news-title" class="mt-8 scroll-mt-24 rounded-2xl border border-amber-500/30 bg-[#0c101c]/95 p-5 sm:p-7 shadow-lg shadow-black/20">
                     <div class="flex flex-wrap items-center justify-between gap-3 mb-5">
                         <h2 id="news-title" class="flex items-center gap-3 text-xl sm:text-2xl font-bold text-white">
@@ -244,13 +244,14 @@
                         <summary class="md:hidden cursor-pointer text-sm font-semibold text-amber-300">News archive</summary>
                         <p class="hidden md:block text-xs uppercase tracking-wider text-gray-400 mb-3">Updates</p>
                         <nav aria-label="News updates" class="space-y-2 mt-3 md:mt-0">
-                            <button type="button" data-news="latest" aria-current="true" class="news-choice"><span>Community feedback · latest update</span>First Improvements Already Implemented</button>
+                            <button type="button" data-news="latest" aria-current="true" class="news-choice"><span><time datetime="2026-09-27">27 September 2026</time> · Community feedback</span>First Improvements Already Implemented</button>
                         </nav>
                     </details>
                     <div id="news-content" class="news-scroll order-1 md:order-2 min-w-0 flex-1" tabindex="0" role="region" aria-label="Selected news content" aria-live="polite">
                     <article data-news-panel="latest" class="news-article" aria-labelledby="latest-news-title">
                         <span class="inline-block rounded-md border border-amber-500/30 bg-amber-500/10 px-2 py-1 text-xs font-semibold tracking-wide text-amber-300 mb-3">COMMUNITY FEEDBACK</span>
                         <h3 id="latest-news-title" class="text-lg sm:text-xl font-bold text-white">LightTreeFM – Community Feedback Update: First Improvements Already Implemented</h3>
+                        <p class="news-date">Published on <time datetime="2026-09-27">27 September 2026</time></p>
                         <p>The first feedback after the Autumn Release has already turned into real improvements.</p>
                         <p>A LightTreeFM user provided a detailed set of observations after testing the new release on both Workbench and Custom Screen configurations. Several of those suggestions have now been implemented.</p>
                         <div class="news-passage">
@@ -295,6 +296,7 @@
 
     <style>
         .news-article p { margin-top: 16px; text-align: justify; font-size: 15px; color: #cbd5e1; }
+        .news-article .news-date { margin-top: 8px; text-align: left; font-size: 12px; color: #9ca3af; }
         .news-article strong { color: #f1f5f9; font-weight: 600; }
         .news-passage { display: flow-root; margin-top: 20px; }
         .news-passage p:first-of-type { margin-top: 0; }
