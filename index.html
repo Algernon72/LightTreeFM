@@ -244,13 +244,49 @@
                         <summary class="md:hidden cursor-pointer text-sm font-semibold text-amber-300">News archive</summary>
                         <p class="hidden md:block text-xs uppercase tracking-wider text-gray-400 mb-3">Updates</p>
                         <nav aria-label="News updates" class="space-y-2 mt-3 md:mt-0">
-                            <button type="button" data-news="latest" aria-current="true" class="news-choice"><span><time datetime="2026-09-27">27 September 2026</time> · Community feedback</span>First Improvements Already Implemented</button>
+                            <button type="button" data-news="latest" aria-current="true" class="news-choice"><span><time datetime="2026-10-03">3 October 2026</time> · Development update</span>LightTreeFM Development Update</button>
+                            <button type="button" data-news="community-feedback" class="news-choice"><span><time datetime="2026-09-27">27 September 2026</time> · Community feedback</span>First Improvements Already Implemented</button>
                         </nav>
                     </details>
                     <div id="news-content" class="news-scroll order-1 md:order-2 min-w-0 flex-1" tabindex="0" role="region" aria-label="Selected news content" aria-live="polite">
                     <article data-news-panel="latest" class="news-article" aria-labelledby="latest-news-title">
+                        <span class="inline-block rounded-md border border-amber-500/30 bg-amber-500/10 px-2 py-1 text-xs font-semibold tracking-wide text-amber-300 mb-3">DEVELOPMENT UPDATE</span>
+                        <h3 id="latest-news-title" class="text-lg sm:text-xl font-bold text-white">LightTreeFM Development Update</h3>
+                        <p class="news-date">Published on <time datetime="2026-10-03">3 October 2026</time></p>
+                        <p>The latest round of work on LightTreeFM has focused less on adding large new features and more on making the existing system cleaner, more predictable, and easier to maintain.</p>
+                        <p>One of the main changes is a revision of the <strong>unified archive resolver</strong>.</p>
+                        <figure class="news-illustration">
+                            <a href="IMAGES/news/unified-archive-resolver.png" onclick="openLightbox('news/unified-archive-resolver.png', 'Unified archive resolver: before and after refactoring'); return false;" aria-label="Enlarge diagram of the unified archive resolver">
+                                <img src="IMAGES/news/unified-archive-resolver.png" width="1920" height="819" alt="Before and after refactoring: fragmented archive checks replaced by a single resolver for LHA, LZX and ZIP" loading="lazy" />
+                            </a>
+                            <figcaption>The unified archive resolver before and after refactoring.</figcaption>
+                        </figure>
+                        <p><strong>Archive creation</strong> now relies on a clearer <strong>single decision path</strong> when choosing between normal and low-memory operation. Previously, some parts of the archive system could perform their own memory checks and reach slightly different conclusions. The new approach keeps that decision centralized and consistent across LHA, LZX and ZIP operations.</p>
+                        <p>This resolver became necessary to fix an architectural problem that dates back to the early stages of the project. LightTreeFM is essentially my first “serious” software project, and some of the original archive logic grew gradually as new cases, exceptions and memory checks were added. What initially worked well enough eventually became too fragmented, with different parts of the code making similar decisions independently. This is also one of the lessons I have learned from vibe coding. It can be an extremely powerful way to turn ideas into real software, especially for someone who is not a professional programmer, but it also has its traps.</p>
+                        <p>When a project grows, it is very easy to keep adding fixes and new branches without immediately seeing the architectural debt being created underneath. AI can help write the code, but it does not remove the need to understand the system, question previous choices and sometimes stop adding features in order to redesign something properly.</p>
+                        <p>This also made it possible to remove some older code that had accumulated during development. Several diagnostic and development-oriented sections were still present even though they were no longer required by the current architecture. This declunking work helps reduce duplication, simplifies the codebase, and keeps the release build focused on what is actually needed.</p>
+                        <p>The left panel navigation has also received a small but useful usability improvement. <strong>The new cycle button</strong> makes it easier to switch between the available panel contents without adding extra controls or taking up more interface space.</p>
+                        <figure class="news-illustration news-illustration-cycle">
+                            <a href="IMAGES/news/navigation-cycle.png" onclick="openLightbox('news/navigation-cycle.png', 'The new left-panel cycle button'); return false;" aria-label="Enlarge screenshot of the new left-panel cycle button">
+                                <img src="IMAGES/news/navigation-cycle.png" width="198" height="270" alt="Left navigation panel with a red arrow pointing to the cycle button beside Vol" loading="lazy" />
+                            </a>
+                            <figcaption>The new left-panel cycle button.</figcaption>
+                        </figure>
+                        <p>Copy, move and delete progress windows have been reworked as well. The layout is cleaner, but the more important change is behind the scenes: progress reporting now has a better understanding of the amount of work involved. Operations containing directories and many nested files can therefore provide a more meaningful completion percentage instead of treating an entire folder as a single item.</p>
+                        <figure class="news-illustration news-illustration-progress">
+                            <a href="IMAGES/news/file-operation-progress.jpg" onclick="openLightbox('news/file-operation-progress.jpg', 'Improved file-operation progress window'); return false;" aria-label="Enlarge screenshot of the improved progress window">
+                                <img src="IMAGES/news/file-operation-progress.jpg" width="651" height="525" alt="LightTreeFM copy progress window showing source, destination, item counts, current file and 71 percent completion" loading="lazy" />
+                            </a>
+                            <figcaption>The reworked file-operation progress window.</figcaption>
+                        </figure>
+                        <p>Finally, an archive-related filename bug has been fixed. Files or directories whose names begin with a space are now handled correctly when creating archives.</p>
+                        <p>The next release will therefore be something of a <strong>“not-so-hotfix”</strong>: not an emergency patch, but a focused adjustment built largely around the feedback, suggestions and requests received from users who have tried LightTreeFM and, most importantly, enjoyed using it.</p>
+                        <p class="news-closing">This update is mainly about refinement: correcting an early architectural weakness, removing development baggage, improving progress feedback and polishing everyday usability. It may not be the most visible kind of development work, but it is the kind that makes LightTreeFM stronger and easier to evolve.</p>
+                        <p><a class="text-amber-300 underline hover:text-amber-200" href="https://dsavioni.itch.io/lighttreefm/devlog/1688604/lighttreefm-development-update" target="_blank" rel="noopener noreferrer">Read the original development update on itch.io</a></p>
+                    </article>
+                    <article data-news-panel="community-feedback" class="news-article" aria-labelledby="community-feedback-news-title" hidden>
                         <span class="inline-block rounded-md border border-amber-500/30 bg-amber-500/10 px-2 py-1 text-xs font-semibold tracking-wide text-amber-300 mb-3">COMMUNITY FEEDBACK</span>
-                        <h3 id="latest-news-title" class="text-lg sm:text-xl font-bold text-white">LightTreeFM – Community Feedback Update: First Improvements Already Implemented</h3>
+                        <h3 id="community-feedback-news-title" class="text-lg sm:text-xl font-bold text-white">LightTreeFM – Community Feedback Update: First Improvements Already Implemented</h3>
                         <p class="news-date">Published on <time datetime="2026-09-27">27 September 2026</time></p>
                         <p>The first feedback after the Autumn Release has already turned into real improvements.</p>
                         <p>A LightTreeFM user provided a detailed set of observations after testing the new release on both Workbench and Custom Screen configurations. Several of those suggestions have now been implemented.</p>
@@ -305,6 +341,12 @@
         .news-photo img { width: 100%; height: auto; border: 1px solid #374151; border-radius: 8px; }
         .news-photo a { display: block; cursor: zoom-in; }
         .news-photo figcaption { font-size: 11px; color: #9ca3af; margin-top: 6px; text-align: left; }
+        .news-illustration { margin-top: 20px; }
+        .news-illustration a { display: block; cursor: zoom-in; }
+        .news-illustration img { display: block; width: 100%; height: auto; border: 1px solid #374151; border-radius: 8px; }
+        .news-illustration figcaption { margin-top: 6px; font-size: 11px; color: #9ca3af; text-align: left; }
+        .news-illustration-cycle { max-width: 198px; }
+        .news-illustration-progress { max-width: 651px; }
         .news-closing { padding: 16px; border-left: 2px solid #fbbf24; background: rgba(245,158,11,.07); }
         @media (max-width: 1023px) { .news-photo, .news-photo-left { float: none; width: 100%; margin: 0 0 16px; } }
         .news-scroll { height: 560px; overflow-y: auto; overscroll-behavior-y: contain; scrollbar-gutter: stable; padding-right: 16px; }
