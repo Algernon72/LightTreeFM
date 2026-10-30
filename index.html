@@ -244,12 +244,44 @@
                         <summary class="md:hidden cursor-pointer text-sm font-semibold text-amber-300">News archive</summary>
                         <p class="hidden md:block text-xs uppercase tracking-wider text-gray-400 mb-3">Updates</p>
                         <nav aria-label="News updates" class="space-y-2 mt-3 md:mt-0">
-                            <button type="button" data-news="latest" aria-current="true" class="news-choice"><span><time datetime="2026-10-03">3 October 2026</time> · Development update</span>LightTreeFM Development Update</button>
+                            <button type="button" data-news="image-viewer" aria-current="true" class="news-choice"><span><time datetime="2026-10-30">30 October 2026</time> · Development update</span>Internal Image Viewer</button>
+                            <button type="button" data-news="latest" class="news-choice"><span><time datetime="2026-10-03">3 October 2026</time> · Development update</span>LightTreeFM Development Update</button>
                             <button type="button" data-news="community-feedback" class="news-choice"><span><time datetime="2026-09-27">27 September 2026</time> · Community feedback</span>First Improvements Already Implemented</button>
                         </nav>
                     </details>
                     <div id="news-content" class="news-scroll order-1 md:order-2 min-w-0 flex-1" tabindex="0" role="region" aria-label="Selected news content" aria-live="polite">
-                    <article data-news-panel="latest" class="news-article" aria-labelledby="latest-news-title">
+                    <article data-news-panel="image-viewer" class="news-article" aria-labelledby="image-viewer-news-title">
+                        <span class="inline-block rounded-md border border-amber-500/30 bg-amber-500/10 px-2 py-1 text-xs font-semibold tracking-wide text-amber-300 mb-3">DEVELOPMENT UPDATE</span>
+                        <h3 id="image-viewer-news-title" class="text-lg sm:text-xl font-bold text-white">LightTreeFM – Internal Image Viewer Development Update!</h3>
+                        <p class="news-date">Published on <time datetime="2026-10-30">30 October 2026</time></p>
+                        <p>Development of LightTreeFM's built-in image viewer is progressing nicely, and it's becoming a much more capable part of the file manager!</p>
+                        <p>The goal is to provide a <strong>fast, lightweight and fully integrated image viewing experience</strong>, from classic Amiga systems to modern RTG configurations, without relying on external viewers.</p>
+                        <figure class="news-illustration">
+                            <a href="IMAGES/news/internal-image-viewer-v1-2219.png" onclick="openLightbox('news/internal-image-viewer-v1-2219.png', 'LightTreeFM v1.2219: multiple independent image viewer windows on an RTG Workbench'); return false;" aria-label="Enlarge screenshot of the internal image viewer on RTG Workbench">
+                                <img src="IMAGES/news/internal-image-viewer-v1-2219.png" width="1925" height="1078" alt="LightTreeFM v1.2219 on an RTG Workbench, displaying five independent image viewer windows with classic Amiga artwork and zoom controls" loading="lazy" />
+                            </a>
+                            <figcaption>LightTreeFM v1.2219 running several independent image viewer windows simultaneously on an RTG Workbench.</figcaption>
+                        </figure>
+                        <h4 class="mt-6 text-base font-bold text-white">Current features include</h4>
+                        <ul class="mt-4 list-disc pl-5 space-y-3 text-[15px] text-slate-300">
+                            <li><strong>Multiple image formats</strong> – Support for IFF ILBM, HAM6, HAM8, PNG, JPEG and GIF, with display capabilities depending on the available chipset.</li>
+                            <li><strong>Native Amiga display modes</strong> – Support for OCS/ECS and AGA, including HAM display modes, with dedicated rendering paths and colour conversion where required.</li>
+                            <li><strong>RTG support</strong> – Image viewing on graphics-card-equipped Amigas, taking advantage of higher resolutions and colour depths.</li>
+                            <li><strong>Multiple viewer instances</strong> – Open several images simultaneously in independent windows on RTG screens, as shown in the screenshot.</li>
+                            <li><strong>Zoom controls</strong> – Convenient zoom-in, zoom-out and 1:1 viewing options directly from the viewer interface.</li>
+                            <li><strong>Aspect ratio handling</strong> – Image dimensions and display proportions are managed to preserve the intended appearance.</li>
+                            <li><strong>Classic Amiga graphics</strong> – Support for traditional Amiga image formats, including HAM artwork.</li>
+                            <li><strong>Performance-focused development</strong> – Ongoing work on decoding speed, memory efficiency and optimised rendering, particularly for classic 68000-based machines.</li>
+                        </ul>
+                        <h4 class="mt-6 text-base font-bold text-white">Designed for classic Amiga hardware</h4>
+                        <p>One of the main challenges is keeping the viewer usable on modest configurations while also taking advantage of faster CPUs, AGA and RTG hardware when available.</p>
+                        <p>The viewer is being developed as an integrated LightTreeFM component, maintaining the project's philosophy: modern functionality without forgetting the limitations of the original Amiga machines.</p>
+                        <h4 class="mt-6 text-base font-bold text-white">Still a work in progress!</h4>
+                        <p>There's more optimisation, testing and refinement ahead, especially for image decoding performance and native chipset rendering.</p>
+                        <p>More updates coming as development continues!</p>
+                        <p class="news-closing"><strong>LightTreeFM – Bringing modern file management to classic Amiga systems.</strong></p>
+                    </article>
+                    <article data-news-panel="latest" class="news-article" aria-labelledby="latest-news-title" hidden>
                         <span class="inline-block rounded-md border border-amber-500/30 bg-amber-500/10 px-2 py-1 text-xs font-semibold tracking-wide text-amber-300 mb-3">DEVELOPMENT UPDATE</span>
                         <h3 id="latest-news-title" class="text-lg sm:text-xl font-bold text-white">LightTreeFM Development Update</h3>
                         <p class="news-date">Published on <time datetime="2026-10-03">3 October 2026</time></p>
